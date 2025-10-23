@@ -1,0 +1,184 @@
+.contact-page {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2rem;
+  position: relative;
+}
+
+.navbar-container {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.contact-header {
+  margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+  color: #ffffff;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.contact-item .label {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: left;
+}
+
+.contact-link {
+  color: #3b82f6;
+  text-decoration: underline;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.contact-link:hover {
+  color: #60a5fa;
+}
+
+.contact-text {
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.contact-form-container {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: #2a2a2a;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.send-button {
+  background-color: #fbbf24;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.send-button:hover {
+  background-color: #f59e0b;
+}
+
+.send-button:active {
+  transform: translateY(1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .contact-page {
+    padding: 1rem;
+  }
+  
+  .contact-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .contact-header p {
+    font-size: 1rem;
+  }
+  
+  .contact-info,
+  .contact-form-container {
+    padding: 1.5rem;
+  }
+}

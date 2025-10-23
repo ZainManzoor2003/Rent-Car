@@ -1,0 +1,127 @@
+.blog-page {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2rem;
+  position: relative;
+}
+
+.navbar-container {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.blog-header {
+  text-align: left;
+  margin-bottom: 3rem;
+  padding-top: 4rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+
+.blog-header h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+  color: #ffffff;
+}
+
+.blog-header p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.blog-posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-post-card {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.blog-post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.blog-post-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.blog-post-card p {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.read-more-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  align-self: flex-start;
+  font-size: 1rem;
+}
+
+.read-more-link:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-page {
+    padding: 1rem;
+  }
+  
+  .blog-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .blog-header p {
+    font-size: 1rem;
+  }
+  
+  .blog-posts-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .blog-post-card {
+    padding: 1.5rem;
+  }
+  
+  .blog-post-card h2 {
+    font-size: 1.3rem;
+  }
+  
+  .navbar-container {
+    top: 1rem;
+    right: 1rem;
+  }
+}

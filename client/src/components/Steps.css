@@ -1,0 +1,269 @@
+.steps-section {
+  background: white;
+  padding: 0;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.steps-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.steps-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.steps-image:hover .steps-bg-image {
+  transform: scale(1.05);
+}
+
+.steps-content {
+  background: #1a1a1a;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.steps-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 60px;
+  line-height: 1.2;
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  opacity: 0;
+  transform: translateX(30px);
+  animation: slideInRight 0.6s ease forwards;
+}
+
+.step-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.step-item:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.step-item:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.step-number {
+  background: #ffd700;
+  color: #000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.step-number::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+.step-item:hover .step-number::before {
+  width: 100%;
+  height: 100%;
+}
+
+.step-item:hover .step-number {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+}
+
+.step-number-text {
+  position: relative;
+  z-index: 1;
+}
+
+.step-details {
+  flex: 1;
+  padding-top: 8px;
+}
+
+.step-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 12px;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.step-item:hover .step-title {
+  color: #ffd700;
+}
+
+.step-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ccc;
+  line-height: 1.6;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.step-item:hover .step-description {
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .steps-content {
+    padding: 60px 40px;
+  }
+  
+  .steps-title {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+  }
+  
+  .steps-list {
+    gap: 35px;
+  }
+  
+  .step-number {
+    width: 55px;
+    height: 55px;
+    font-size: 1.1rem;
+  }
+  
+  .step-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  
+  .steps-image {
+    height: 300px;
+    order: 2;
+  }
+  
+  .steps-content {
+    padding: 60px 30px;
+    order: 1;
+  }
+  
+  .steps-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .steps-list {
+    gap: 30px;
+  }
+  
+  .step-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  
+  .step-title {
+    font-size: 1.2rem;
+  }
+  
+  .step-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .steps-content {
+    padding: 40px 20px;
+  }
+  
+  .steps-title {
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+  }
+  
+  .steps-list {
+    gap: 25px;
+  }
+  
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 0.9rem;
+  }
+  
+  .step-title {
+    font-size: 1.1rem;
+  }
+  
+  .step-description {
+    font-size: 0.9rem;
+  }
+}
+

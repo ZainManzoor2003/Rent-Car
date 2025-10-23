@@ -1,0 +1,14 @@
+/* Homepage Component Styles */
+.homepage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure smooth scrolling between sections */
+.homepage section {
+  scroll-margin-top: 80px;
+}
+
+/* Add any additional homepage-specific styles here */

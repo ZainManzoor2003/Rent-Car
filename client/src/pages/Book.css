@@ -1,0 +1,676 @@
+/* Book Online Section */
+.book-online-section {
+  padding: 4rem 2rem;
+  background-color: #000000;
+}
+
+.book-online-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book-online-header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.book-online-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.book-online-header p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin: 0 0 0.5rem 0;
+}
+
+.widget-status {
+  font-size: 0.9rem;
+  color: #cccccc;
+  opacity: 0.8;
+}
+
+.widget-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.load-widget-btn {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.load-widget-btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.open-new-tab-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.open-new-tab-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.widget-preview {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-placeholder {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.loading-bar {
+  height: 8px;
+  background-color: #2a2a2a;
+  border-radius: 4px;
+  animation: loading 1.5s ease-in-out infinite;
+}
+
+.loading-bar:nth-child(1) {
+  width: 100%;
+  animation-delay: 0s;
+}
+
+.loading-bar:nth-child(2) {
+  width: 80%;
+  animation-delay: 0.2s;
+}
+
+.loading-bar:nth-child(3) {
+  width: 60%;
+  animation-delay: 0.4s;
+}
+
+@keyframes loading {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.widget-placeholder {
+  text-align: center;
+  z-index: 1;
+}
+
+.widget-text {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+}
+
+.widget-instruction {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .book-online-section {
+    padding: 2rem 1rem;
+  }
+  
+  .book-online-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .book-online-header p {
+    font-size: 1.1rem;
+  }
+  
+  .widget-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .load-widget-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .open-new-tab-link {
+    text-align: center;
+  }
+  
+  .widget-preview {
+    padding: 1.5rem;
+    min-height: 300px;
+  }
+  
+  .loading-placeholder {
+    top: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+  
+  .widget-text {
+    font-size: 1.1rem;
+  }
+  
+  .widget-instruction {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-online-header h2 {
+    font-size: 2rem;
+  }
+  
+  .book-online-header p {
+    font-size: 1rem;
+  }
+  
+  .widget-preview {
+    padding: 1rem;
+    min-height: 250px;
+  }
+  
+  .loading-placeholder {
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+  
+  .widget-text {
+    font-size: 1rem;
+  }
+  
+  .widget-instruction {
+    font-size: 0.8rem;
+  }
+}
+
+/* Popular Booking Options Section */
+.booking-options-section {
+  padding: 4rem 2rem;
+  background-color: #000000;
+}
+
+.booking-options-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.booking-options-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.booking-options-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.option-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.option-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.option-card h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.option-card p {
+  font-size: 0.85rem;
+  color: #cccccc;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Seamless Travel Section */
+.seamless-travel-section {
+  padding: 4rem 2rem;
+  background-color: #000000;
+}
+
+.seamless-travel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seamless-travel-header {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.seamless-travel-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+.service-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.service-image {
+  background-color: #2a2a2a;
+  height: 120px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-image span {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.service-card p {
+  font-size: 0.85rem;
+  color: #cccccc;
+  margin: 0 0 1rem 0;
+  opacity: 0.8;
+}
+
+.book-link {
+  color: #3b82f6;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.book-link:hover {
+  color: #1d4ed8;
+}
+
+/* Booking Steps Section */
+.booking-steps-section {
+  padding: 4rem 2rem;
+  background-color: #000000;
+}
+
+.booking-steps-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.booking-steps-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.booking-steps-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.step-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.step-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.step-card h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
+}
+
+.step-card p {
+  font-size: 1rem;
+  color: #cccccc;
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 1024px) {
+  .options-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .booking-options-section,
+  .seamless-travel-section,
+  .booking-steps-section {
+    padding: 2rem 1rem;
+  }
+  
+  .booking-options-header h2,
+  .seamless-travel-header h2,
+  .booking-steps-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .options-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .option-card,
+  .service-card,
+  .step-card {
+    padding: 1.25rem;
+  }
+  
+  .service-image {
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-options-header h2,
+  .seamless-travel-header h2,
+  .booking-steps-header h2 {
+    font-size: 2rem;
+  }
+  
+  .options-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .option-card,
+  .service-card,
+  .step-card {
+    padding: 1rem;
+  }
+  
+  .service-image {
+    height: 80px;
+  }
+  
+  .option-card h3,
+  .service-card h3,
+  .step-card h3 {
+    font-size: 1rem;
+  }
+  
+  .option-card p,
+  .service-card p,
+  .step-card p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Our Fleet Section */
+.our-fleet-section {
+  padding: 4rem 2rem;
+  background-color: #000000;
+}
+
+.our-fleet-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.our-fleet-header {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.our-fleet-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.fleet-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.fleet-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.fleet-image {
+  background-color: #2a2a2a;
+  height: 150px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fleet-image span {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.fleet-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.fleet-card p {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin: 0 0 1rem 0;
+  opacity: 0.9;
+}
+
+.calculate-rate-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.calculate-rate-link:hover {
+  color: #1d4ed8;
+}
+
+/* Our Fleet Responsive Design */
+@media (max-width: 1024px) {
+  .fleet-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .our-fleet-section {
+    padding: 2rem 1rem;
+  }
+  
+  .our-fleet-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .fleet-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .fleet-card {
+    padding: 1.25rem;
+  }
+  
+  .fleet-image {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-fleet-header h2 {
+    font-size: 2rem;
+  }
+  
+  .fleet-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .fleet-card {
+    padding: 1rem;
+  }
+  
+  .fleet-image {
+    height: 100px;
+  }
+  
+  .fleet-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .fleet-card p {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,732 @@
+.services-page {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2rem;
+  position: relative;
+}
+
+.navbar-container {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.services-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.services-header {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.services-header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0 0 2rem 0;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.services-header p {
+  font-size: 1.3rem;
+  color: #cccccc;
+  margin: 0 0 3rem 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.services-buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.book-ride-btn {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  min-width: 200px;
+}
+
+.book-ride-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.check-rates-btn {
+  background: transparent;
+  color: #000000;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  min-width: 200px;
+  background-color: #ffd700;
+}
+
+.check-rates-btn:hover {
+  background-color: #ffed4e;
+  border-color: #ffed4e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-page {
+    padding: 1rem;
+  }
+  
+  .services-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .services-header p {
+    font-size: 1.1rem;
+  }
+  
+  .services-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .book-ride-btn,
+  .check-rates-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .navbar-container {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-header {
+    padding: 0 1rem;
+  }
+  
+  .services-header h1 {
+    font-size: 2rem;
+  }
+  
+  .services-header p {
+    font-size: 1rem;
+  }
+}
+
+/* Our Fleet Section */
+.fleet-section {
+  padding: 4rem 2rem;
+  background-color: #000000;
+}
+
+.fleet-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fleet-header {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.fleet-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.fleet-header p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 800px;
+}
+
+.fleet-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.fleet-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.fleet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.fleet-image {
+  background-color: #2a2a2a;
+  height: 180px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.fleet-image span {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.fleet-label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.fleet-label.airport {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.fleet-label.group {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.fleet-label.large-group {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
+.fleet-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.fleet-card p {
+  font-size: 0.9rem;
+  color: #ffffff;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+  opacity: 0.9;
+}
+
+.calculate-rate-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.calculate-rate-link:hover {
+  color: #1d4ed8;
+}
+
+/* Calculate Rate Banner */
+.rate-banner {
+  background: linear-gradient(135deg, #3b82f6, #10b981);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+}
+
+.rate-banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.rate-banner-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.rate-banner-text p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.rate-banner-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.calculate-rates-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.calculate-rates-btn:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-online-btn {
+  background-color: #10b981;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-online-btn:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+/* Customer Testimonials Section */
+.customer-testimonials-section {
+  padding: 4rem 2rem;
+  background-color: #000000;
+}
+
+.customer-testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.customer-testimonials-container h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 3rem 0;
+  line-height: 1.2;
+}
+
+.customer-testimonials-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.customer-testimonial-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.customer-testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.customer-stars {
+  color: #ffd700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.customer-testimonial-card p {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  font-style: italic;
+}
+
+.customer-reviewer {
+  font-size: 0.9rem;
+  color: #cccccc;
+  font-weight: 600;
+}
+
+.customer-review-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.customer-review-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.customer-review-link:hover {
+  color: #1d4ed8;
+}
+
+.customer-dot {
+  color: #666666;
+  font-size: 1.2rem;
+}
+
+/* Call to Action Sections */
+.cta-sections {
+  padding: 4rem 2rem;
+  background-color: #000000;
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.cta-section {
+  text-align: left;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin: 0 0 2rem 0;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  min-width: 200px;
+}
+
+.cta-btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Service Cards Section */
+.service-cards-section {
+  padding: 4rem 2rem;
+  background-color: #000000;
+}
+
+.service-cards-container {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+
+.service-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  min-width: 0;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.service-image {
+  background-color: #2a2a2a;
+  height: 180px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-image span {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.3;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #ffffff;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+  opacity: 0.9;
+}
+
+.check-rates-link {
+  color: #3b82f6;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.check-rates-link:hover {
+  color: #1d4ed8;
+}
+
+/* Responsive Design for Fleet Section */
+@media (max-width: 1024px) {
+  .fleet-cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .fleet-section {
+    padding: 2rem 1rem;
+  }
+  
+  .fleet-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .fleet-header p {
+    font-size: 1rem;
+  }
+  
+  .fleet-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .fleet-card {
+    padding: 1.25rem;
+  }
+  
+  .fleet-image {
+    height: 150px;
+  }
+}
+
+/* Responsive Design for Rate Banner */
+@media (max-width: 768px) {
+  .rate-banner {
+    padding: 2rem 1.5rem;
+  }
+  
+  .rate-banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .rate-banner-text h2 {
+    font-size: 2rem;
+  }
+  
+  .rate-banner-text p {
+    font-size: 1rem;
+  }
+  
+  .rate-banner-buttons {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .calculate-rates-btn,
+  .book-online-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Responsive Design for Testimonials */
+@media (max-width: 1024px) {
+  .customer-testimonials-cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .customer-testimonials-section {
+    padding: 2rem 1rem;
+  }
+  
+  .customer-testimonials-container h2 {
+    font-size: 2.5rem;
+  }
+  
+  .customer-testimonials-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .customer-testimonial-card {
+    padding: 1.5rem;
+  }
+  
+  .customer-review-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .customer-dot {
+    display: none;
+  }
+}
+
+/* Responsive Design for CTA Sections */
+@media (max-width: 768px) {
+  .cta-sections {
+    padding: 2rem 1rem;
+  }
+  
+  .cta-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+  
+  .cta-section p {
+    font-size: 1rem;
+  }
+  
+  .cta-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Responsive Design for Service Cards */
+@media (max-width: 1024px) {
+  .service-cards-container {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .service-card {
+    flex: 1 1 calc(50% - 0.75rem);
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-cards-section {
+    padding: 2rem 1rem;
+  }
+  
+  .service-cards-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .service-card {
+    flex: none;
+    width: 100%;
+    padding: 1.25rem;
+  }
+  
+  .service-image {
+    height: 150px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .service-card p {
+    font-size: 0.85rem;
+  }
+}

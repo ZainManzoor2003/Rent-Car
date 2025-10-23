@@ -1,0 +1,424 @@
+/* McCormick Place Information Section */
+.mccormick-info-section {
+  background-color: #1a1a1a;
+  padding: 60px 0;
+  color: white;
+}
+
+.mccormick-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.info-card {
+  background-color: #2d2d2d;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 10px;
+}
+
+.entrance-list,
+.parking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.entrance-list li,
+.parking-list li {
+  color: #e5e5e5;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.entrance-list li strong {
+  color: white;
+  font-weight: 600;
+}
+
+.card-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.info-link {
+  color: #3b82f6;
+  text-decoration: underline;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.info-link:hover {
+  color: #60a5fa;
+}
+
+/* Distance & Travel Time Section */
+.distance-section {
+  background-color: #0f0f0f;
+  padding: 60px 0;
+  color: white;
+}
+
+.distance-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.distance-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.distance-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.distance-card {
+  background-color: #2d2d2d;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.distance-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.distance-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.distance-details {
+  font-size: 1.1rem;
+  color: #e5e5e5;
+  font-weight: 500;
+  margin: 0;
+}
+
+.distance-disclaimer {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .info-card {
+    padding: 20px;
+  }
+  
+  .distance-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .distance-title {
+    font-size: 1.8rem;
+  }
+  
+  .card-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mccormick-container,
+  .distance-container {
+    padding: 0 15px;
+  }
+  
+  .info-card,
+  .distance-card {
+    padding: 15px;
+  }
+  
+  .distance-title {
+    font-size: 1.5rem;
+  }
+  
+  .distance-card-title {
+    font-size: 1.1rem;
+  }
+  
+  .distance-details {
+    font-size: 1rem;
+  }
+}
+
+/* Service Description Section */
+.service-description-section {
+  background-color: #0f0f0f;
+  padding: 60px 0;
+  color: white;
+}
+
+.service-description-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.service-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.service-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e5e5e5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service-link {
+  color: #3b82f6;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.service-link:hover {
+  color: #60a5fa;
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: #1a1a1a;
+  padding: 60px 0;
+  color: white;
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.faq-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.faq-item {
+  background-color: #2d2d2d;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.faq-item-wide {
+  grid-column: 1 / -1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  color: #e5e5e5;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Fleet Section */
+.fleet-section {
+  background-color: #0f0f0f;
+  padding: 60px 0;
+  color: white;
+}
+
+.fleet-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.fleet-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fleet-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.fleet-card {
+  background-color: #2d2d2d;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fleet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.fleet-image {
+  height: 120px;
+  background-color: #404040;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.fleet-image-placeholder {
+  color: #888;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.fleet-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.fleet-card-details {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.fleet-link {
+  color: #3b82f6;
+  text-decoration: underline;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.fleet-link:hover {
+  color: #60a5fa;
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 768px) {
+  .service-title {
+    font-size: 2rem;
+  }
+  
+  .service-paragraph {
+    font-size: 1rem;
+  }
+  
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .faq-item {
+    padding: 20px;
+  }
+  
+  .fleet-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .fleet-card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-description-container,
+  .faq-container,
+  .fleet-container {
+    padding: 0 15px;
+  }
+  
+  .service-title {
+    font-size: 1.8rem;
+  }
+  
+  .faq-title,
+  .fleet-title {
+    font-size: 1.8rem;
+  }
+  
+  .fleet-cards {
+    grid-template-columns: 1fr;
+  }
+}
