@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
+import logo from '../assets/Logo.png';
 
 const Navbar = ({ isMobile = false, showHamburger = false }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -32,6 +33,13 @@ const Navbar = ({ isMobile = false, showHamburger = false }) => {
 
       {/* Desktop/Mobile Navbar */}
       <nav className={`navbar ${isMobile ? 'mobile-navbar' : ''}`}>
+        {/* Logo */}
+        <div className="navbar-logo">
+          <Link to="/" className="logo-link">
+            <img src={logo} alt="Eminent Limo" className="logo-img" />
+          </Link>
+        </div>
+        
         <ul className={`nav-list ${isMobile ? 'mobile-nav-list' : ''}`}>
           <li className="nav-item">
             <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link>

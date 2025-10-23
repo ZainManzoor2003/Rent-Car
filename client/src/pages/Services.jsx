@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import './Services.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import car1 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_09 PM.png';
+import car2 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_11 PM.png';
+import car3 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_12 PM.png';
+import car4 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_13 PM.png';
 
 const Services = () => {
  
@@ -48,7 +52,7 @@ const Services = () => {
           <div className="service-cards-container">
             <div className="service-card">
               <div className="service-image">
-                <span>Image</span>
+                <img src={car1} alt="Airport Transportation" className="service-img" />
               </div>
               <h3>Airport Transportation</h3>
               <p>Flying in/out of O'Hare (ORD) or Midway (MDW)? Enjoy a comfortable, on-time ride to and from the airport. Professional black car service across Chicagoland.</p>
@@ -57,7 +61,7 @@ const Services = () => {
 
             <div className="service-card">
               <div className="service-image">
-                <span>Image</span>
+                <img src={car2} alt="Group Transportation" className="service-img" />
               </div>
               <h3>Group Transportation</h3>
               <p>Sprinters (11-14) and buses (23-50) for teams, tours, and events. Perfect for sports teams, corporate groups, and large parties.</p>
@@ -66,7 +70,7 @@ const Services = () => {
 
             <div className="service-card">
               <div className="service-image">
-                <span>Image</span>
+                <img src={car3} alt="Corporate Transportation" className="service-img" />
               </div>
               <h3>Corporate Transportation</h3>
               <p>In town for a conference, corporate event, or business meeting? Choose from sedans to 50-passenger buses for the finest corporate transportation.</p>
@@ -86,7 +90,7 @@ const Services = () => {
             <div className="fleet-cards">
               <div className="fleet-card">
                 <div className="fleet-image">
-                  <span>Image</span>
+                  <img src={car1} alt="Airport Fleet" className="fleet-img" />
                 </div>
                 <div className="fleet-label airport">Airport</div>
                 <h3>Luxury SUV</h3>
@@ -96,7 +100,7 @@ const Services = () => {
 
               <div className="fleet-card">
                 <div className="fleet-image">
-                  <span>Image</span>
+                  <img src={car2} alt="Group Fleet" className="fleet-img" />
                 </div>
                 <div className="fleet-label group">Group</div>
                 <h3>Standard Shuttle Sprinter</h3>
@@ -106,7 +110,7 @@ const Services = () => {
 
               <div className="fleet-card">
                 <div className="fleet-image">
-                  <span>Image</span>
+                  <img src={car3} alt="Group Fleet" className="fleet-img" />
                 </div>
                 <div className="fleet-label group">Group</div>
                 <h3>Large Shuttle Sprinter</h3>
@@ -116,7 +120,7 @@ const Services = () => {
 
               <div className="fleet-card">
                 <div className="fleet-image">
-                  <span>Image</span>
+                  <img src={car4} alt="Large Group Fleet" className="fleet-img" />
                 </div>
                 <div className="fleet-label large-group">Large Group</div>
                 <h3>Minibus</h3>

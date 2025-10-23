@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 import './Book.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import car1 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_09 PM.png';
+import car2 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_11 PM.png';
+import car3 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_12 PM.png';
+import car4 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_13 PM.png';
+import car5 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_14 PM.png';
+import car6 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_17 PM.png';
+import car7 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_24 PM.png';
 
 const Book = () => {
  
@@ -125,7 +132,7 @@ const Book = () => {
             <div className="services-grid">
               <div className="service-card">
                 <div className="service-image">
-                  <span>Image</span>
+                  <img src={car1} alt="Airport Transportation" className="service-img" />
                 </div>
                 <h3>Airport Transportation</h3>
                 <p>O'Hare & Midway with flight tracking.</p>
@@ -133,7 +140,7 @@ const Book = () => {
               </div>
               <div className="service-card">
                 <div className="service-image">
-                  <span>Image</span>
+                  <img src={car2} alt="Group Transportation" className="service-img" />
                 </div>
                 <h3>Group Transportation</h3>
                 <p>Sprinters & buses for 10-50.</p>
@@ -141,7 +148,7 @@ const Book = () => {
               </div>
               <div className="service-card">
                 <div className="service-image">
-                  <span>Image</span>
+                  <img src={car3} alt="Corporate Transportation" className="service-img" />
                 </div>
                 <h3>Corporate Transportation</h3>
                 <p>Executive sedans & SUVs.</p>
@@ -149,7 +156,7 @@ const Book = () => {
               </div>
               <div className="service-card">
                 <div className="service-image">
-                  <span>Image</span>
+                  <img src={car4} alt="Special Occasions" className="service-img" />
                 </div>
                 <h3>Special Occasions</h3>
                 <p>Proms, concerts, nights out.</p>
@@ -157,7 +164,7 @@ const Book = () => {
               </div>
               <div className="service-card">
                 <div className="service-image">
-                  <span>Image</span>
+                  <img src={car5} alt="Wedding Transportation" className="service-img" />
                 </div>
                 <h3>Wedding Transportation</h3>
                 <p>Shuttle service all day.</p>
@@ -175,7 +182,7 @@ const Book = () => {
             <div className="fleet-grid">
               <div className="fleet-card">
                 <div className="fleet-image">
-                  <span>Image</span>
+                  <img src={car1} alt="Executive Sedan" className="fleet-img" />
                 </div>
                 <h3>Executive Sedan</h3>
                 <p>3 passengers • 3 bags</p>
@@ -183,7 +190,7 @@ const Book = () => {
               </div>
               <div className="fleet-card">
                 <div className="fleet-image">
-                  <span>Image</span>
+                  <img src={car2} alt="Luxury SUV" className="fleet-img" />
                 </div>
                 <h3>Luxury SUV</h3>
                 <p>6 passengers • 6 bags</p>
@@ -191,7 +198,7 @@ const Book = () => {
               </div>
               <div className="fleet-card">
                 <div className="fleet-image">
-                  <span>Image</span>
+                  <img src={car6} alt="Executive Sprinter" className="fleet-img" />
                 </div>
                 <h3>Executive Sprinter</h3>
                 <p>14 passengers • 12 bags</p>
@@ -199,7 +206,7 @@ const Book = () => {
               </div>
               <div className="fleet-card">
                 <div className="fleet-image">
-                  <span>Image</span>
+                  <img src={car7} alt="Shuttle Bus" className="fleet-img" />
                 </div>
                 <h3>Shuttle Bus</h3>
                 <p>44 passengers</p>

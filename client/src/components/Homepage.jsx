@@ -11,7 +11,7 @@ const Homepage = () => {
   return (
     <div className="homepage">
       <Header />
-      <Features />
+      {/* <Features /> */}
       <Cars />
       <Steps />
       <Testimonials />

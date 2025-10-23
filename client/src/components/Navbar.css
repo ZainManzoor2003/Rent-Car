@@ -27,6 +27,12 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.logo-img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
+
 .nav-list {
   display: flex;
   list-style: none;
@@ -284,6 +290,10 @@
     font-size: 20px;
   }
   
+  .logo-img {
+    height: 35px;
+  }
+  
   .mobile-navbar .navbar-logo {
     display: none;
   }
@@ -292,5 +302,9 @@
 @media (max-width: 480px) {
   .logo-text {
     font-size: 18px;
+  }
+  
+  .logo-img {
+    height: 30px;
   }
 }

@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import './VehicleTypes.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import car1 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_09 PM.png';
+import car2 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_11 PM.png';
+import car3 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_12 PM.png';
+import car4 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_13 PM.png';
+import car5 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_14 PM.png';
+import car6 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_17 PM.png';
 
 const VehiceTypes = () => {
  
@@ -54,7 +60,7 @@ const VehiceTypes = () => {
               {/* Executive SUV Card */}
               <div className="vehicle-card">
                 <div className="vehicle-image">
-                  <div className="image-placeholder">Fleet Image Placeholder</div>
+                  <img src={car1} alt="Executive SUV" className="vehicle-img" />
                 </div>
                 <div className="vehicle-content">
                   <div className="vehicle-header">
@@ -81,7 +87,7 @@ const VehiceTypes = () => {
               {/* Luxury SUV Card */}
               <div className="vehicle-card">
                 <div className="vehicle-image">
-                  <div className="image-placeholder">Fleet Image Placeholder</div>
+                  <img src={car2} alt="Luxury SUV" className="vehicle-img" />
                 </div>
                 <div className="vehicle-content">
                   <div className="vehicle-header">
@@ -118,7 +124,7 @@ const VehiceTypes = () => {
               {/* Party Sprinter Limo Card */}
               <div className="vehicle-card">
                 <div className="vehicle-image">
-                  <div className="image-placeholder">Fleet Image Placeholder</div>
+                  <img src={car3} alt="Party Sprinter Limo" className="vehicle-img" />
                 </div>
                 <div className="vehicle-content">
                   <div className="vehicle-header">
@@ -145,7 +151,7 @@ const VehiceTypes = () => {
               {/* 30 Passengers Party Bus Card */}
               <div className="vehicle-card">
                 <div className="vehicle-image">
-                  <div className="image-placeholder">Fleet Image Placeholder</div>
+                  <img src={car4} alt="30 Passengers Party Bus" className="vehicle-img" />
                 </div>
                 <div className="vehicle-content">
                   <div className="vehicle-header">
@@ -182,7 +188,7 @@ const VehiceTypes = () => {
               {/* Standard Shuttle Sprinter Card */}
               <div className="vehicle-card">
                 <div className="vehicle-image">
-                  <div className="image-placeholder">Fleet Image Placeholder</div>
+                  <img src={car5} alt="Standard Shuttle Sprinter" className="vehicle-img" />
                 </div>
                 <div className="vehicle-content">
                   <div className="vehicle-header">
@@ -209,7 +215,7 @@ const VehiceTypes = () => {
               {/* Large Shuttle Sprinter Card */}
               <div className="vehicle-card">
                 <div className="vehicle-image">
-                  <div className="image-placeholder">Fleet Image Placeholder</div>
+                  <img src={car6} alt="Large Shuttle Sprinter" className="vehicle-img" />
                 </div>
                 <div className="vehicle-content">
                   <div className="vehicle-header">

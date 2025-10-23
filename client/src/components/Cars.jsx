@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './Cars.css';
+import car1 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_09 PM.png';
+import car2 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_11 PM.png';
+import car3 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_12 PM.png';
+import car4 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_13 PM.png';
+import car5 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_14 PM.png';
+import car6 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_17 PM.png';
+import car7 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_24 PM.png';
 
 const Cars = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,7 +18,7 @@ const Cars = () => {
     {
       id: 1,
       name: "Luxury Sedan",
-      image: "https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d246a08777aecdb41d97f_car-01.avif",
+      image: car1,
       price: "$89/day",
       features: ["Automatic", "4 Seats", "Air Conditioning", "GPS Navigation"],
       rating: 4.8,
@@ -20,7 +27,7 @@ const Cars = () => {
     {
       id: 2,
       name: "Premium SUV",
-      image: "https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d247c699d5c8508c0ae11_car-02.avif",
+      image: car2,
       price: "$129/day",
       features: ["Automatic", "7 Seats", "4WD", "Premium Sound"],
       rating: 4.9,
@@ -29,7 +36,7 @@ const Cars = () => {
     {
       id: 3,
       name: "Sports Car",
-      image: "https://images.unsplash.com/photo-1549317336-206569e8475c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      image: car3,
       price: "$199/day",
       features: ["Manual", "2 Seats", "Convertible", "Sport Mode"],
       rating: 4.9,
@@ -38,7 +45,7 @@ const Cars = () => {
     {
       id: 4,
       name: "Compact Hatchback",
-      image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      image: car4,
       price: "$59/day",
       features: ["Automatic", "5 Seats", "Fuel Efficient", "City Friendly"],
       rating: 4.6,
@@ -47,7 +54,7 @@ const Cars = () => {
     {
       id: 5,
       name: "Luxury Convertible",
-      image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      image: car5,
       price: "$179/day",
       features: ["Automatic", "4 Seats", "Convertible", "Premium Interior"],
       rating: 4.8,
@@ -56,11 +63,20 @@ const Cars = () => {
     {
       id: 6,
       name: "Family Minivan",
-      image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      image: car6,
       price: "$99/day",
       features: ["Automatic", "8 Seats", "Family Friendly", "Large Cargo"],
       rating: 4.7,
       reviews: 203
+    },
+    {
+      id: 7,
+      name: "Executive Limousine",
+      image: car7,
+      price: "$299/day",
+      features: ["Automatic", "6 Seats", "Luxury Interior", "Chauffeur Service"],
+      rating: 4.9,
+      reviews: 87
     }
   ];
 

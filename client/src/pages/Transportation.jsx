@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import './Transportation.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import car1 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_09 PM.png';
+import car2 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_11 PM.png';
+import car3 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_12 PM.png';
+import car4 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_13 PM.png';
 
 const Transportation = () => {
  
@@ -134,7 +138,7 @@ const Transportation = () => {
             <div className="fleet-cards">
               <div className="fleet-card">
                 <div className="fleet-image">
-                  <div className="fleet-image-placeholder">Image</div>
+                  <img src={car1} alt="Executive Sedan" className="fleet-img" />
                 </div>
                 <h3 className="fleet-card-title">Executive Sedan</h3>
                 <p className="fleet-card-details">3 pax • Solo or small team</p>
@@ -142,7 +146,7 @@ const Transportation = () => {
               </div>
               <div className="fleet-card">
                 <div className="fleet-image">
-                  <div className="fleet-image-placeholder">Image</div>
+                  <img src={car2} alt="Luxury SUV" className="fleet-img" />
                 </div>
                 <h3 className="fleet-card-title">Luxury SUV</h3>
                 <p className="fleet-card-details">6 pax • Comfort + luggage</p>
@@ -150,7 +154,7 @@ const Transportation = () => {
               </div>
               <div className="fleet-card">
                 <div className="fleet-image">
-                  <div className="fleet-image-placeholder">Image</div>
+                  <img src={car3} alt="Sprinter Van" className="fleet-img" />
                 </div>
                 <h3 className="fleet-card-title">Sprinter Van</h3>
                 <p className="fleet-card-details">11-14 pax • Group shuttle</p>
@@ -158,7 +162,7 @@ const Transportation = () => {
               </div>
               <div className="fleet-card">
                 <div className="fleet-image">
-                  <div className="fleet-image-placeholder">Image</div>
+                  <img src={car4} alt="Minibus / Coach" className="fleet-img" />
                 </div>
                 <h3 className="fleet-card-title">Minibus / Coach</h3>
                 <p className="fleet-card-details">23-50 pax • Large group</p>
