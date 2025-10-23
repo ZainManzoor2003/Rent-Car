@@ -49,7 +49,6 @@ const Navbar = ({ isMobile = false, showHamburger = false }) => {
                 <li><Link to="/check-rates" className={`dropdown-link ${location.pathname === '/check-rates' ? 'active' : ''}`}>Check Rates</Link></li>
                 <li><Link to="/book" className={`dropdown-link ${location.pathname === '/book' ? 'active' : ''}`}>Book</Link></li>
                 <li><Link to="/transportation" className={`dropdown-link ${location.pathname === '/transportation' ? 'active' : ''}`}>Transportation</Link></li>
-                <li><Link to="/contact" className={`dropdown-link ${location.pathname === '/contact' ? 'active' : ''}`}>Contact</Link></li>
                 <li><Link to="/vehicle-types" className={`dropdown-link ${location.pathname === '/vehicle-types' ? 'active' : ''}`}>Vehicle Types</Link></li>
               </ul>
             )}
