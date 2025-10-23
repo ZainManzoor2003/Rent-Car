@@ -67,7 +67,7 @@
 }
 
 .contact-link {
-  color: #3b82f6;
+  color: #ffd700;
   text-decoration: underline;
   font-size: 1rem;
   transition: color 0.3s ease;
@@ -124,7 +124,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #3b82f6;
+  border-color: #ffd700;
 }
 
 .form-group input::placeholder,

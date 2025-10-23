@@ -42,10 +42,14 @@ const VehiceTypes = () => {
 
           <div className="right-section">
             <div className="video-placeholder">
-              <div className="video-content">
-                <p className="video-subtitle">Explore Our Luxury Fleet</p>
-                <h2 className="video-title">Executive • Luxury • Group</h2>
-              </div>
+              <iframe 
+                src="https://www.youtube.com/embed/NBrQRy1OslE"
+                title="Luxury Transportation Services In Chicago"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="video-iframe"
+              ></iframe>
             </div>
           </div>
         </div>

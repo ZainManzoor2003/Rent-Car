@@ -176,14 +176,18 @@ const CheckRates = () => {
           </div>
           
 
-          <div className="right-section">
-            <div className="video-placeholder">
-              <div className="video-content">
-                <p className="video-subtitle">WHERE LUXURY MEETS SIMPLICITY</p>
-                <h2 className="video-title">Promo Video Placeholder</h2>
+            <div className="right-section">
+              <div className="video-placeholder">
+                <iframe 
+                  src="https://www.youtube.com/embed/NBrQRy1OslE"
+                  title="Luxury Transportation Services In Chicago"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="video-iframe"
+                ></iframe>
               </div>
             </div>
-          </div>
         </div>
         <div className="rate-form-section" id="rate-form">
           <div className="rate-form-container">
