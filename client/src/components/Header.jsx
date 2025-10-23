@@ -1,13 +1,20 @@
 import React from 'react';
 import Navbar from './Navbar';
 import './Header.css';
+import logo from '../assets/Logo.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <span className="logo-text">Carent</span>
+           <div className="navbar-logo">
+          <Link to="/" className="logo-link">
+            <img src={logo} alt="Eminent Limo" className="logo-img" />
+          </Link>
+        </div>
+        
         </div>
         <div className="desktop-nav">
           <Navbar showHamburger={true} />

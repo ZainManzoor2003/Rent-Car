@@ -34,11 +34,11 @@ const Navbar = ({ isMobile = false, showHamburger = false }) => {
       {/* Desktop/Mobile Navbar */}
       <nav className={`navbar ${isMobile ? 'mobile-navbar' : ''}`}>
         {/* Logo */}
-        <div className="navbar-logo">
+        {/* <div className="navbar-logo">
           <Link to="/" className="logo-link">
             <img src={logo} alt="Eminent Limo" className="logo-img" />
           </Link>
-        </div>
+        </div> */}
         
         <ul className={`nav-list ${isMobile ? 'mobile-nav-list' : ''}`}>
           <li className="nav-item">

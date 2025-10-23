@@ -1,8 +1,8 @@
 .app {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-              url('https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/675021f0245836dd38d0d517_hero-01.avif');
-  background-size: cover;
+              url('./assets/ChatGPT\ Image\ Oct\ 18_\ 2025_\ 12_18_12\ PM.png');
+  background-size: contain;
   background-position: center;
   background-attachment: fixed;
   position: relative;
