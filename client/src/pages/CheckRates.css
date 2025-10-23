@@ -397,6 +397,21 @@
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fleet-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .service-card h3 {
@@ -621,7 +636,7 @@
 
 /* Ready to Ride Banner */
 .ready-to-ride-banner {
-  background: linear-gradient(135deg, #2563eb, #06b6d4);
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
   padding: 2rem;
 }
 
@@ -638,31 +653,33 @@
 .banner-text h2 {
   font-size: 2rem;
   font-weight: 800;
-  color: #ffffff;
+  color: #000000;
   margin: 0 0 0.5rem 0;
 }
 
 .banner-text p {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.8);
   margin: 0;
 }
 
 .banner-cta {
-  background: #ffffff;
-  color: #000000;
-  border: none;
+  background: #000000;
+  color: #ffd700;
+  border: 2px solid #000000;
   border-radius: 9999px;
   padding: 0.9rem 1.5rem;
   font-size: 1.1rem;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .banner-cta:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  background: #ffd700;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
 }
 
 @media (max-width: 768px) {

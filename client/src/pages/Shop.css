@@ -79,7 +79,7 @@
 
 .search-input:focus {
   outline: none;
-  border-color: #3b82f6;
+  border-color: #ffd700;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
@@ -186,7 +186,7 @@
 .package-price {
   font-size: 2rem;
   font-weight: bold;
-  color: #3b82f6;
+  color: #ffd700;
   margin: 0 0 1rem 0;
 }
 
@@ -214,7 +214,7 @@
 
 .add-to-cart-btn {
   width: 100%;
-  background-color: #3b82f6;
+  background-color: #ffd700;
   color: #ffffff;
   border: none;
   padding: 0.75rem 1rem;
@@ -289,7 +289,7 @@
 
 /* Why Shop Our Packages Banner */
 .why-shop-banner {
-  background: linear-gradient(135deg, #3b82f6, #10b981);
+  background: linear-gradient(135deg, #ffd700, #10b981);
   border-radius: 12px;
   padding: 3rem 2rem;
   margin-bottom: 4rem;
@@ -445,6 +445,81 @@
   }
   
   .why-shop-column p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Ready to Ride Banner */
+.ready-to-ride-banner {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  padding: 2rem;
+}
+
+.banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: transparent;
+}
+
+.banner-text h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #000000;
+  margin: 0 0 0.5rem 0;
+}
+
+.banner-text p {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+
+.banner-cta {
+  background: #000000;
+  color: #ffd700;
+  border: 2px solid #000000;
+  border-radius: 9999px;
+  padding: 0.9rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.banner-cta:hover {
+  background: #ffd700;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .banner-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .banner-cta {
+    align-self: stretch;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ready-to-ride-banner {
+    padding: 1.5rem 1rem;
+  }
+  
+  .banner-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .banner-content p {
     font-size: 0.9rem;
   }
 }

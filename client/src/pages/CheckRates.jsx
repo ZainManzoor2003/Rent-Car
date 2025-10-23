@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 import './CheckRates.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import car1 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_09 PM.png';
+import car2 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_11 PM.png';
+import car3 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_12 PM.png';
+import car4 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_13 PM.png';
+import car5 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_14 PM.png';
+import car6 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_17 PM.png';
+import car7 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_24 PM.png';
 
 const CheckRates = () => {
   const [formData, setFormData] = useState({
@@ -21,79 +28,92 @@ const CheckRates = () => {
       id: 1,
       category: "SUV Stretch Limo",
       name: "Hummer Limousine 2022",
-      capacity: "20 passengers • 3 bags"
+      capacity: "20 passengers • 3 bags",
+      image: car7
     },
     {
       id: 2,
       category: "Stretch Limo",
       name: "SUV Stretch Limo",
-      capacity: "14 passengers • 3 bags"
+      capacity: "14 passengers • 3 bags",
+      image: car6
     },
     {
       id: 3,
       category: "Airport Limo",
       name: "Executive Sedan",
-      capacity: "3 passengers • 3 bags"
+      capacity: "3 passengers • 3 bags",
+      image: car1
     },
     {
       id: 4,
       category: "Luxury SUV",
       name: "Luxury SUV",
-      capacity: "6 passengers • 6 bags"
+      capacity: "6 passengers • 6 bags",
+      image: car2
     },
     {
       id: 5,
       category: "Party Bus",
       name: "Party Bus 2023",
-      capacity: "30 passengers • 8 bags"
+      capacity: "30 passengers • 8 bags",
+      image: car4
     },
     {
       id: 6,
       category: "Luxury Sedan",
       name: "Mercedes S-Class",
-      capacity: "4 passengers • 4 bags"
+      capacity: "4 passengers • 4 bags",
+      image: car3
     },
     {
       id: 7,
       category: "Shuttle",
       name: "Standard Shuttle Sprinter",
-      capacity: "11 passengers • 11 bags"
+      capacity: "11 passengers • 11 bags",
+      image: car5
     },
     {
       id: 8,
       category: "Shuttle",
       name: "Large Shuttle Sprinter",
-      capacity: "14 passengers • 14 bags"
+      capacity: "14 passengers • 14 bags",
+      image: car6
     },
     {
       id: 9,
       category: "Coach",
       name: "Luxury Coach",
-      capacity: "50 passengers • 20 bags"
+      capacity: "50 passengers • 20 bags",
+      image: car7
     },
     {
       id: 10,
       category: "Luxury SUV",
       name: "Cadillac Escalade",
-      capacity: "7 passengers • 7 bags"
+      capacity: "7 passengers • 7 bags",
+      image: car2
     },
     {
       id: 11,
       category: "Stretch Limo",
       name: "Lincoln Stretch",
-      capacity: "10 passengers • 4 bags"
+      capacity: "10 passengers • 4 bags",
+      image: car4
     },
     {
       id: 12,
       category: "Airport Limo",
       name: "BMW 7 Series",
-      capacity: "4 passengers • 4 bags"
+      capacity: "4 passengers • 4 bags",
+      image: car1
     },
     {
       id: 13,
       category: "Luxury Sedan",
       name: "Audi A8",
-      capacity: "4 passengers • 4 bags"
+      capacity: "4 passengers • 4 bags",
+      image: car3
     }
   ];
 
@@ -298,19 +318,25 @@ const CheckRates = () => {
             <h2 className="section-title">Seamless Travel, Every Time</h2>
             <div className="service-cards">
               <div className="service-card">
-                <div className="card-image-placeholder">Image</div>
+                <div className="card-image-placeholder">
+                  <img src={car1} alt="Airport Transportation" className="service-img" />
+                </div>
                 <h3>Airport Transportation</h3>
                 <p>Reliable rides to O'Hare & Midway with real-time flight tracking.</p>
                 <a href="#" className="book-link">Book</a>
               </div>
               <div className="service-card">
-                <div className="card-image-placeholder">Image</div>
+                <div className="card-image-placeholder">
+                  <img src={car2} alt="Group Transportation" className="service-img" />
+                </div>
                 <h3>Group Transportation</h3>
                 <p>Sprinters (11-14) and buses (23-50) for teams, tours, and events.</p>
                 <a href="#" className="book-link">Book</a>
               </div>
               <div className="service-card">
-                <div className="card-image-placeholder">Image</div>
+                <div className="card-image-placeholder">
+                  <img src={car3} alt="Corporate Transportation" className="service-img" />
+                </div>
                 <h3>Corporate Transportation</h3>
                 <p>Executive sedans & SUVs for meetings and roadshows.</p>
                 <a href="#" className="book-link">Book</a>
@@ -340,7 +366,9 @@ const CheckRates = () => {
                  {fleetData.map((vehicle) => (
                    <div key={vehicle.id} className="fleet-card">
                      <div className="vehicle-category">{vehicle.category}</div>
-                     <div className="card-image-placeholder">Image</div>
+                     <div className="card-image-placeholder">
+                       <img src={vehicle.image} alt={vehicle.name} className="fleet-img" />
+                     </div>
                      <h3>{vehicle.name}</h3>
                      <p className="capacity">{vehicle.capacity}</p>
                      <a href="#" className="calculate-rate-link">Calculate Rate</a>
