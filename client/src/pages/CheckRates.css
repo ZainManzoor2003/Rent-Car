@@ -47,7 +47,7 @@
 }
 
 .calculate-rate-btn {
-  background-color: #ffd700;
+  background-color: #1447E6;
   color: #ffffff;
   border: none;
   border-radius: 8px;
@@ -108,7 +108,7 @@
 }
 
 .video-content {
-  text-align: center;
+  text-align: left;
   padding: 2rem;
 }
 
@@ -139,7 +139,7 @@
   border-radius: 12px;
   padding: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: #1A1A1A;
+  background-color: #121212;
 }
 
 .form-header {
@@ -161,7 +161,7 @@
 .timezone {
   color: #cccccc;
   font-size: 0.9rem;
-  background-color: #2a2a2a;
+  background-color: #121212;
   padding: 0.5rem 1rem;
   border-radius: 6px;
 }
@@ -244,7 +244,7 @@
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-align: center;
+  text-align: left;
 }
 
 .service-option:hover {
@@ -253,8 +253,8 @@
 }
 
 .service-option.selected {
-  border-color: #ffd700;
-  background-color: #ffd700;
+  border-color: #1447E6;
+  background-color: #1447E6;
   color: #ffffff;
 }
 
@@ -310,7 +310,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .checkrates-content {
     grid-template-columns: 1fr;
     padding: 1rem;
@@ -374,8 +374,10 @@
 }
 
 .service-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .card-image-placeholder {
@@ -466,8 +468,8 @@
 }
 
 .nav-arrow:hover {
-  background-color: #ffd700;
-  border-color: #ffd700;
+  background-color: #1447E6;
+  border-color: #1447E6;
 }
 
 .fleet-carousel-container {
@@ -494,8 +496,10 @@
 }
 
 .fleet-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .vehicle-category {
@@ -528,14 +532,14 @@
 }
 
 .calculate-rate-link {
-  color: #ffd700;
+  color: #1447E6;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .calculate-rate-link:hover {
-  color: #ffd712;
+  color: #1447E6;
   text-decoration: underline;
 }
 
@@ -552,17 +556,17 @@
   height: 12px;
   border-radius: 50%;
   border: none;
-  background-color: #404040;
+  background-color: #121212;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .dot:hover {
-  background-color: #666666;
+  background-color: #121212;
 }
 
 .dot.active {
-  background-color: #ffd700;
+  background-color: #1447E6;
 }
 
 /* FAQ Section */
@@ -635,7 +639,7 @@
 }
 
 .our-fleet-header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 3rem;
 }
 
@@ -654,14 +658,14 @@
 
 .fleet-cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
 .fleet-card {
   border-radius: 12px;
   padding: 1.5rem;
-  text-align: center;
+  text-align: left;
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -715,7 +719,7 @@
 }
 
 /* Fleet Section Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .our-fleet-section {
     padding: 2rem 1rem;
   }
@@ -744,8 +748,10 @@
 
 /* Ready to Ride Banner */
 .ready-to-ride-banner {
-  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, #10b981);
   padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem 0;
 }
 
 .banner-content {
@@ -761,48 +767,49 @@
 .banner-text h2 {
   font-size: 2rem;
   font-weight: 800;
-  color: #000000;
+  color: #ffffff;
   margin: 0 0 0.5rem 0;
 }
 
 .banner-text p {
   font-size: 1rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
   margin: 0;
+  opacity: 0.95;
 }
 
 .banner-cta {
-  background: #000000;
-  color: #ffd700;
-  border: 2px solid #000000;
-  border-radius: 9999px;
-  padding: 0.9rem 1.5rem;
-  font-size: 1.1rem;
-  font-weight: 700;
+  background: #ffffff;
+  color: #1f2937;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
+  min-width: 120px;
 }
 
 .banner-cta:hover {
-  background: #ffd700;
-  color: #000000;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+  background: #f3f4f6;
+  transform: translateY(-1px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .banner-content {
     flex-direction: column;
     align-items: flex-start;
   }
   .banner-cta {
     align-self: stretch;
-    text-align: center;
+    text-align: left;
   }
 }
 
 /* Responsive Design for New Sections */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .seamless-travel-section,
   .our-fleet-section,
   .faq-section {
@@ -849,7 +856,7 @@
 }
 
 /* Mobile carousel adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .fleet-card {
     flex: 0 0 calc(50% - 1rem);
     min-width: 250px;

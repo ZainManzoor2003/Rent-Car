@@ -136,16 +136,13 @@ const Services = () => {
         </div>
 
         {/* Calculate Rate Banner */}
-        <div className="rate-banner">
-          <div className="rate-banner-content">
-            <div className="rate-banner-text">
+        <div className="ready-to-ride-banner">
+          <div className="banner-content">
+            <div className="banner-text">
               <h2>Calculate an Instant Rate</h2>
               <p>Check hourly rates and get instant pricing for your service.</p>
             </div>
-            <div className="rate-banner-buttons">
-              <button className="calculate-rates-btn">CALCULATE RATES</button>
-              <button className="book-online-btn">Book Online</button>
-            </div>
+            <button className="banner-cta">Book Now</button>
           </div>
         </div>
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import './Blog.css';
-import Navbar from './Navbar';
+import Header from './Header';
 import Footer from './Footer';
+import Navbar from './Navbar';
 
 const Blog = () => {
   const blogPosts = [
@@ -21,10 +22,8 @@ const Blog = () => {
 
   return (
     <>
+      <Navbar/>
       <div className="blog-page">
-        <div className="navbar-container">
-          <Navbar showHamburger={true} />
-        </div>
         
         <div className="blog-header">
           <h1>Blog</h1>

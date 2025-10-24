@@ -8,7 +8,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .features-title {
@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
   padding: 40px 20px;
   background: white;
   border-radius: 12px;

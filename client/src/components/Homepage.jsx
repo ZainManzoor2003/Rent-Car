@@ -81,6 +81,45 @@ const Homepage = () => {
           </div>
         </div>
 
+         {/* Seamless Travel Section */}
+         <div className="seamless-travel-section">
+          <div className="seamless-travel-container">
+            <div className="seamless-travel-header">
+              <h2>Seamless Travel, Every Time</h2>
+            </div>
+            <div className="service-cards-grid">
+              <div className="service-card">
+                <div className="service-image">
+                  <img src={car5} alt="Airport Transfers" />
+                </div>
+                <h3>Airport Transfers</h3>
+                <p>Reliable rides to O'Hare & Midway with flight tracking.</p>
+              </div>
+              <div className="service-card">
+                <div className="service-image">
+                  <img src={car6} alt="Corporate Travel" />
+                </div>
+                <h3>Corporate Travel</h3>
+                <p>Executive sedans & SUVs for business professionals.</p>
+              </div>
+              <div className="service-card">
+                <div className="service-image">
+                  <img src={car7} alt="Corporate Travel" />
+                </div>
+                <h3>Corporate Travel</h3>
+                <p>Executive sedans & SUVs for business professionals.</p>
+              </div>
+              <div className="service-card">
+                <div className="service-image">
+                  <img src={car1} alt="Corporate Travel" />
+                </div>
+                <h3>Corporate Travel</h3>
+                <p>Executive sedans & SUVs for business professionals.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Fleet Overview Section */}
         <div className="fleet-overview-section">
           <div className="fleet-overview-container">
@@ -124,76 +163,6 @@ const Homepage = () => {
           </div>
         </div>
 
-        {/* Seamless Travel Section */}
-        <div className="seamless-travel-section">
-          <div className="seamless-travel-container">
-            <div className="seamless-travel-header">
-              <h2>Seamless Travel, Every Time</h2>
-            </div>
-            <div className="service-cards-grid">
-              <div className="service-card">
-                <div className="service-image">
-                  <img src={car5} alt="Airport Transfers" />
-                </div>
-                <h3>Airport Transfers</h3>
-                <p>Reliable rides to O'Hare & Midway with flight tracking.</p>
-              </div>
-              <div className="service-card">
-                <div className="service-image">
-                  <img src={car6} alt="Corporate Travel" />
-                </div>
-                <h3>Corporate Travel</h3>
-                <p>Executive sedans & SUVs for business professionals.</p>
-              </div>
-              <div className="service-card">
-                <div className="service-image">
-                  <img src={car7} alt="Corporate Travel" />
-                </div>
-                <h3>Corporate Travel</h3>
-                <p>Executive sedans & SUVs for business professionals.</p>
-              </div>
-              <div className="service-card">
-                <div className="service-image">
-                  <img src={car1} alt="Corporate Travel" />
-                </div>
-                <h3>Corporate Travel</h3>
-                <p>Executive sedans & SUVs for business professionals.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-
-        {/* Our Services Section */}
-        <div className="our-services-section">
-          <div className="our-services-container">
-            <div className="our-services-header">
-              <h2>Our Services</h2>
-            </div>
-            <div className="services-cards-grid">
-              <div className="service-card">
-                <div className="service-image">
-                  <img src={car2} alt="Corporate Transportation" />
-                </div>
-                <h3>Corporate Transportation</h3>
-              </div>
-              <div className="service-card">
-                <div className="service-image">
-                  <img src={car3} alt="Corporate Transportation" />
-                </div>
-                <h3>Corporate Transportation</h3>
-              </div>
-              <div className="service-card">
-                <div className="service-image">
-                  <img src={car4} alt="Our Fleet" />
-                </div>
-                <h3>Our Fleet</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Top Destinations Section */}
         <div className="top-destinations-section">
           <div className="top-destinations-container">
@@ -222,29 +191,8 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-
-        {/* Customer Reviews Section */}
-        <div className="customer-reviews-section">
-          <div className="customer-reviews-container">
-            <div className="customer-reviews-header">
-              <h2>Customer Reviews</h2>
-            </div>
-            <div className="reviews-cards-grid">
-              <div className="review-card">
-                <p>"If you are in need of limo services in Chicago and surrounding areas, Eminent Limo is the only choice. As a constant Chicagoland traveler, I utilize Eminent Limo's services at least once a month, often times last minute, and they always deliver.."</p>
-                <div className="review-author">— Coleen Bogle · Google Verified Review</div>
-              </div>
-              <div className="review-card">
-                <div className="stars">★★★★★</div>
-                <p>"GREAT COMPANY !!!! My driver MR. T was awesome f a great customer service. I hi work and thanks for serving Our Services"</p>
-                <div className="review-author">— Tory Lane · Google Verified Rev</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Our Fleet Section */}
-        <div className="our-fleet-section">
+{/* Our Fleet Section */}
+<div className="our-fleet-section">
           <div className="our-fleet-container">
             <div className="our-fleet-header">
               <h2>Our Fleet</h2>
@@ -277,12 +225,68 @@ const Homepage = () => {
             </div>
           </div>
         </div>
+       
+
+        
+
+        {/* Our Services Section */}
+        <div className="our-services-section">
+          <div className="our-services-container">
+            <div className="our-services-header">
+              <h2>Our Services</h2>
+            </div>
+            <div className="services-cards-grid">
+              <div className="service-card">
+                <div className="service-image">
+                  <img src={car2} alt="Corporate Transportation" />
+                </div>
+                <h3>Corporate Transportation</h3>
+              </div>
+              <div className="service-card">
+                <div className="service-image">
+                  <img src={car3} alt="Corporate Transportation" />
+                </div>
+                <h3>Corporate Transportation</h3>
+              </div>
+              <div className="service-card">
+                <div className="service-image">
+                  <img src={car4} alt="Our Fleet" />
+                </div>
+                <h3>Our Fleet</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        {/* Customer Reviews Section */}
+        <div className="customer-reviews-section">
+          <div className="customer-reviews-container">
+            <div className="customer-reviews-header">
+              <h2>Customer Reviews</h2>
+            </div>
+            <div className="reviews-cards-grid">
+              <div className="review-card">
+                <p>"If you are in need of limo services in Chicago and surrounding areas, Eminent Limo is the only choice. As a constant Chicagoland traveler, I utilize Eminent Limo's services at least once a month, often times last minute, and they always deliver.."</p>
+                <div className="review-author">— Coleen Bogle · Google Verified Review</div>
+              </div>
+              <div className="review-card">
+                <div className="stars">★★★★★</div>
+                <p>"GREAT COMPANY !!!! My driver MR. T was awesome f a great customer service. I hi work and thanks for serving Our Services"</p>
+                <div className="review-author">— Tory Lane · Google Verified Rev</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
 
         <div className="ready-to-ride-banner">
           <div className="banner-content">
             <div className="banner-text">
-              <h2>Ready to Ride in Style?</h2>
-              <p>Lock in your rate and reserve your luxury experience today.</p>
+              <h2>Book With Confidence</h2>
+              <p>Eminent Limo makes group and private transportation effortless. Get instant quotes, transparent pricing, and 24/7 support.</p>
             </div>
             <button className="banner-cta">Book Now</button>
           </div>
@@ -297,7 +301,7 @@ const Homepage = () => {
             <div className="ohare-section">
               <h3>Chicago O'Hare International Airport</h3>
               <p>Popular Wisconsin destinations connected to ORD.</p>
-              <div className="destinations-grid" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))'}}>
+              <div className="destinations-grid">
                 <div className="destination-item">Beloit</div>
                 <div className="destination-item">Burlington</div>
                 <div className="destination-item">Elkhorn</div>
@@ -307,7 +311,6 @@ const Homepage = () => {
                 <div className="destination-item">New Berlin</div>
                 <div className="destination-item">Racine</div>
                 <div className="destination-item">South Milwaukee</div>
-                <div className="destination-item">Wauwatosa</div>
                 <div className="destination-item">Brookfield</div>
                 <div className="destination-item">Caledonia</div>
                 <div className="destination-item">Franklin</div>
@@ -317,10 +320,15 @@ const Homepage = () => {
                 <div className="destination-item">Pewaukee City</div>
                 <div className="destination-item">Salem Lakes</div>
                 <div className="destination-item">St. Francis</div>
-                <div className="destination-item">West Allis</div>
                 <div className="destination-item">Brown Deer</div>
                 <div className="destination-item">Cudahy</div>
                 <div className="destination-item">Glendale</div>
+                <div className="destination-item">Janesville</div>
+                <div className="destination-item">Mequon</div>
+                <div className="destination-item">Muskego</div>
+                <div className="destination-item">Pleasant Prairie</div>
+                <div className="destination-item">Shorewood</div>
+                <div className="destination-item">Waukes</div>
               </div>
             </div>
           </div>

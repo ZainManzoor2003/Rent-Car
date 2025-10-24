@@ -147,7 +147,7 @@
 }
 
 .step-item:hover .step-title {
-  color: #ffd700;
+  color: #1447E6;
 }
 
 .step-description {
@@ -209,7 +209,7 @@
   .steps-title {
     font-size: 2rem;
     margin-bottom: 40px;
-    text-align: center;
+    text-align: left;
   }
   
   .steps-list {
@@ -218,7 +218,7 @@
   
   .step-item {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     gap: 16px;
   }
   

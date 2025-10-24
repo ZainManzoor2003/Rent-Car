@@ -55,7 +55,7 @@
   border: none;
   cursor: pointer;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   min-width: 200px;
 }
 
@@ -77,9 +77,9 @@
   transition: all 0.3s ease;
   cursor: pointer;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   min-width: 200px;
-  background-color: #ffd700;
+  background-color: #1447E6;
 }
 
 .check-rates-btn:hover {
@@ -90,7 +90,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .services-page {
     padding: 1rem;
   }
@@ -170,7 +170,7 @@
 }
 
 .fleet-card {
-  background-color: #1a1a1a;
+  background-color: #121212;
   border-radius: 12px;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -180,13 +180,14 @@
 }
 
 .fleet-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .fleet-image {
-  background-color: #2a2a2a;
+  background-color: #121212;
   height: 180px;
   border-radius: 8px;
   display: flex;
@@ -248,7 +249,7 @@
 }
 
 .calculate-rate-link {
-  color: #ffd700;
+  color: #1447E6;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
@@ -256,7 +257,7 @@
 }
 
 .calculate-rate-link:hover {
-  color: #ffd712;
+  color: #1447E6;
 }
 
 /* Calculate Rate Banner */
@@ -343,7 +344,7 @@
 .customer-testimonials-container {
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 .customer-testimonials-container h2 {
@@ -362,7 +363,7 @@
 }
 
 .customer-testimonial-card {
-  background-color: #1a1a1a;
+  background-color: #121212;
   border-radius: 12px;
   padding: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -405,7 +406,7 @@
 }
 
 .customer-review-link {
-  color: #ffd700;
+  color: #1447E6;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
@@ -413,7 +414,7 @@
 }
 
 .customer-review-link:hover {
-  color: #ffd712;
+  color: #1447E6;
 }
 
 .customer-dot {
@@ -455,7 +456,7 @@
 }
 
 .cta-btn {
-  background-color: #ffd700;
+  background-color: #1447E6;
   color: #ffffff;
   border: none;
   padding: 1rem 2rem;
@@ -470,7 +471,7 @@
 }
 
 .cta-btn:hover {
-  background-color: #ffd712;
+  background-color: #1447E6;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
@@ -490,7 +491,7 @@
 }
 
 .service-card {
-  background-color: #1a1a1a;
+  background-color: #121212;
   border-radius: 8px;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -500,13 +501,14 @@
 }
 
 .service-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .service-image {
-  background-color: #2a2a2a;
+  background-color: #121212;
   height: 180px;
   border-radius: 6px;
   display: flex;
@@ -554,7 +556,7 @@
 }
 
 .check-rates-link {
-  color: #ffd700;
+  color: #1447E6;
   text-decoration: underline;
   font-weight: 600;
   font-size: 0.9rem;
@@ -562,7 +564,7 @@
 }
 
 .check-rates-link:hover {
-  color: #ffd712;
+  color: #1447E6;
 }
 
 /* Responsive Design for Fleet Section */
@@ -572,7 +574,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .fleet-section {
     padding: 2rem 1rem;
   }
@@ -600,14 +602,14 @@
 }
 
 /* Responsive Design for Rate Banner */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .rate-banner {
     padding: 2rem 1.5rem;
   }
   
   .rate-banner-content {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     gap: 2rem;
   }
   
@@ -639,7 +641,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .customer-testimonials-section {
     padding: 2rem 1rem;
   }
@@ -668,7 +670,7 @@
 }
 
 /* Responsive Design for CTA Sections */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .cta-sections {
     padding: 2rem 1rem;
   }
@@ -705,7 +707,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .service-cards-section {
     padding: 2rem 1rem;
   }
@@ -748,7 +750,7 @@
 
 .service-card-grid {
   flex: 1;
-  background-color: #2d2d2d;
+  background-color: #121212;
   border-radius: 12px;
   padding: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -763,12 +765,11 @@
   font-size: 1.3rem;
   font-weight: bold;
   color: #ffffff;
-  margin: 0 0 1.5rem 0;
   line-height: 1.4;
 }
 
 .service-card-grid .check-rates-link {
-  color: #ffd700;
+  color: #1447E6;
   text-decoration: underline;
   font-weight: 500;
   font-size: 1rem;
@@ -777,7 +778,7 @@
 }
 
 .service-card-grid .check-rates-link:hover {
-  color: #ffd720;
+  color: #1447E6;
 }
 
 /* Responsive Design for Service Cards Grid */
@@ -789,7 +790,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .service-cards-grid-section {
     padding: 2rem 1rem;
   }
@@ -829,7 +830,7 @@
   width: 100%;
   max-width: 500px;
   height: 400px;
-  background-color: #1a1a1a;
+  background-color: #121212;
   border-radius: 12px;
   display: flex;
   align-items: center;

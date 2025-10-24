@@ -96,6 +96,9 @@ const Navbar = ({ isMobile = false, showHamburger = false }) => {
                 <Link to="/shop" className="dropdown-item" onClick={closePagesDropdown}>
                   Shop
                 </Link>
+                <Link to="/blog" className="dropdown-item" onClick={closePagesDropdown}>
+                  Blog
+                </Link>
               </div>
             )}
           </li>
@@ -116,10 +119,73 @@ const Navbar = ({ isMobile = false, showHamburger = false }) => {
       {showHamburger && isMobileMenuOpen && (
         <div className="mobile-nav-overlay" onClick={toggleMobileMenu}>
           <div className="mobile-nav" onClick={(e) => e.stopPropagation()}>
-            <button className="close-mobile-nav" onClick={toggleMobileMenu}>
-              ×
-            </button>
-            <Navbar isMobile={true} />
+            <div className="mobile-nav-header">
+              <div className="mobile-nav-logo">
+                <div className="mobile-nav-logo-icon">E</div>
+                <div className="mobile-nav-logo-text">Eminent Limo</div>
+              </div>
+              <button className="close-mobile-nav" onClick={toggleMobileMenu}>
+                ×
+              </button>
+            </div>
+            <div className="mobile-nav-content">
+              <ul className="mobile-nav-list">
+                <li className="nav-item">
+                  <Link to="/book" className={`nav-link ${location.pathname === '/book' ? 'active' : ''}`} onClick={toggleMobileMenu}>
+                    Book Online
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/services" className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`} onClick={toggleMobileMenu}>
+                    Services
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/vehicle-types" className={`nav-link ${location.pathname === '/vehicle-types' ? 'active' : ''}`} onClick={toggleMobileMenu}>
+                    Vehicle Types
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/contact" className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} onClick={toggleMobileMenu}>
+                    Contact
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/check-rates" className={`nav-link ${location.pathname === '/check-rates' ? 'active' : ''}`} onClick={toggleMobileMenu}>
+                    Check Rates
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/destinations" className={`nav-link ${location.pathname === '/destinations' ? 'active' : ''}`} onClick={toggleMobileMenu}>
+                    Destinations
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/transportation" className={`nav-link ${location.pathname === '/transportation' ? 'active' : ''}`} onClick={toggleMobileMenu}>
+                    Transportation
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/shop" className={`nav-link ${location.pathname === '/shop' ? 'active' : ''}`} onClick={toggleMobileMenu}>
+                    Shop
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/blog" className={`nav-link ${location.pathname === '/blog' ? 'active' : ''}`} onClick={toggleMobileMenu}>
+                    Blog
+                  </Link>
+                </li>
+              </ul>
+              
+              <div className="mobile-nav-buttons">
+                <button className="mobile-light-mode-btn" onClick={toggleLightMode}>
+                  Light Mode
+                </button>
+                <Link to="/check-rates" className="mobile-check-rates-btn" onClick={toggleMobileMenu}>
+                  Check Rates
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       )}

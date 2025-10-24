@@ -15,8 +15,8 @@
 
 /* Trusted Partners Section */
 .trusted-partners-section {
-  padding: 4rem 2rem;
-  margin-top: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
+  margin-top: 1rem;
 }
 
 .trusted-partners-container {
@@ -44,11 +44,11 @@
 }
 
 .partner-card {
-  background-color: #2a2a2a;
+  background-color: #121212;
   border: 1px solid #444444;
   border-radius: 12px;
   padding: 2rem 1rem;
-  text-align: center;
+  text-align: left;
   transition: all 0.3s ease;
   min-height: 80px;
   display: flex;
@@ -57,8 +57,10 @@
 }
 
 .partner-card:hover {
-  border-color: #ffd700;
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .partner-card span {
@@ -69,8 +71,8 @@
 
 /* Fleet Overview Section */
 .fleet-overview-section {
-  padding: 4rem 2rem;
-  margin-top: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
+  margin-top: 1rem;
 }
 
 .fleet-overview-container {
@@ -91,26 +93,28 @@
 
 .fleet-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
 .fleet-card {
-  background-color: #2a2a2a;
+  background-color: #121212;
   border: 1px solid #444444;
   border-radius: 12px;
   padding: 1.5rem;
-  text-align: center;
+  text-align: left;
   transition: all 0.3s ease;
 }
 
 .fleet-card:hover {
-  border-color: #ffd700;
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .fleet-image {
-  background-color: #3a3a3a;
+  background-color: #121212;
   border-radius: 8px;
   padding: 3rem 1rem;
   margin-bottom: 1.5rem;
@@ -140,7 +144,7 @@
 }
 
 .book-now-link {
-  color: #ffd700;
+  color: #1447E6;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -148,13 +152,13 @@
 }
 
 .book-now-link:hover {
-  color: #ffd712;
+  color: #1447E6;
 }
 
 /* Seamless Travel Section */
 .seamless-travel-section {
-  padding: 4rem 2rem;
-  margin-top: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
+  margin-top: 1rem;
 }
 
 .seamless-travel-container {
@@ -180,21 +184,23 @@
 }
 
 .service-card {
-  background-color: #2a2a2a;
+  background-color: #121212;
   border: 1px solid #444444;
   border-radius: 12px;
   padding: 1.5rem;
-  text-align: center;
+  text-align: left;
   transition: all 0.3s ease;
 }
 
 .service-card:hover {
-  border-color: #ffd700;
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .service-image {
-  background-color: #3a3a3a;
+  background-color: #121212;
   border-radius: 8px;
   padding: 3rem 1rem;
   margin-bottom: 1.5rem;
@@ -224,7 +230,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .trusted-partners-section,
   .fleet-overview-section,
   .seamless-travel-section {
@@ -291,8 +297,8 @@
 
 /* Our Services Section */
 .our-services-section {
-  padding: 4rem 2rem;
-  margin-top: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
+  margin-top: 1rem;
 }
 
 .our-services-container {
@@ -318,21 +324,23 @@
 }
 
 .service-card {
-  background-color: #2a2a2a;
+  background-color: #121212;
   border: 1px solid #444444;
   border-radius: 12px;
   padding: 1.5rem;
-  text-align: center;
+  text-align: left;
   transition: all 0.3s ease;
 }
 
 .service-card:hover {
-  border-color: #ffd700;
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .service-image {
-  background-color: #3a3a3a;
+  background-color: #121212;
   border-radius: 8px;
   padding: 3rem 1rem;
   margin-bottom: 1.5rem;
@@ -357,8 +365,8 @@
 
 /* Top Destinations Section */
 .top-destinations-section {
-  padding: 4rem 2rem;
-  margin-top: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
+  margin-top: 1rem;
 }
 
 .top-destinations-container {
@@ -384,21 +392,23 @@
 }
 
 .destination-card {
-  background-color: #2a2a2a;
+  background-color: #121212;
   border: 1px solid #444444;
   border-radius: 12px;
   padding: 1.5rem;
-  text-align: center;
+  text-align: left;
   transition: all 0.3s ease;
 }
 
 .destination-card:hover {
-  border-color: #ffd700;
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .destination-image {
-  background-color: #3a3a3a;
+  background-color: #121212;
   border-radius: 8px;
   padding: 3rem 1rem;
   margin-bottom: 1.5rem;
@@ -423,8 +433,8 @@
 
 /* Customer Reviews Section */
 .customer-reviews-section {
-  padding: 4rem 2rem;
-  margin-top: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
+  margin-top: 1rem;
 }
 
 .customer-reviews-container {
@@ -450,7 +460,7 @@
 }
 
 .review-card {
-  background-color: #2a2a2a;
+  background-color: #121212;
   border: 1px solid #444444;
   border-radius: 12px;
   padding: 2rem;
@@ -458,8 +468,10 @@
 }
 
 .review-card:hover {
-  border-color: #ffd700;
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .review-card p {
@@ -470,7 +482,7 @@
 }
 
 .stars {
-  color: #ffd700;
+  color: #1447E6;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -483,8 +495,8 @@
 
 /* Our Fleet Section */
 .our-fleet-section {
-  padding: 4rem 2rem;
-  margin-top: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
+  margin-top: 1rem;
 }
 
 .our-fleet-container {
@@ -510,21 +522,23 @@
 }
 
 .fleet-card {
-  background-color: #2a2a2a;
+  background-color: #121212;
   border: 1px solid #444444;
   border-radius: 12px;
   padding: 1.5rem;
-  text-align: center;
+  text-align: left;
   transition: all 0.3s ease;
 }
 
 .fleet-card:hover {
-  border-color: #ffd700;
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .fleet-image {
-  background-color: #3a3a3a;
+  background-color: #121212;
   border-radius: 8px;
   padding: 3rem 1rem;
   margin-bottom: 1.5rem;
@@ -567,8 +581,8 @@
 
 /* Service Areas & Top Destinations Section */
 .service-areas-section {
-  padding: 4rem 2rem;
-  margin-top: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
+  margin-top: 1rem;
 }
 
 .service-areas-container {
@@ -588,7 +602,7 @@
 }
 
 .ohare-section {
-  background-color: #2a2a2a;
+  background-color: #121212;
   border: 1px solid #444444;
   border-radius: 12px;
   padding: 2rem;
@@ -609,36 +623,37 @@
 
 .destinations-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 }
 
 .destination-item {
-  background-color: #444444;
+  background-color: #121212;
   color: #ffffff;
   padding: 0.8rem 1rem;
-  border-radius: 8px;
+  border-radius: 16px;
   font-size: 0.9rem;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   transition: all 0.3s ease;
   cursor: pointer;
-}
-
-.destination-item:hover {
-  background-color: #ffd700;
-  color: #000000;
-  transform: translateY(-2px);
+  border: 1px solid #444444;
+  text-align: left;
 }
 
 /* Additional responsive styles for new sections */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  .trusted-partners-section,
+  .fleet-overview-section,
+  .seamless-travel-section,
   .our-services-section,
   .top-destinations-section,
   .customer-reviews-section,
   .our-fleet-section,
-  .service-areas-section {
-    padding: 2rem 1rem;
+  .service-areas-section,
+  .service-cards-section {
+    padding: 1.5rem 1rem 2rem 1rem;
+    margin-top: 0.5rem;
   }
 
   .our-services-header h2,
@@ -696,8 +711,8 @@
 
 /* Service Cards Section */
 .service-cards-section {
-  padding: 4rem 2rem;
-  margin-top: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
+  margin-top: 1rem;
 }
 
 .service-cards-container {
@@ -709,7 +724,7 @@
 }
 
 .service-card {
-  background-color: #2a2a2a;
+  background-color: #121212;
   border: 1px solid #444444;
   border-radius: 12px;
   padding: 2rem;
@@ -717,8 +732,10 @@
 }
 
 .service-card:hover {
-  border-color: #ffd700;
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .service-card h3 {
@@ -735,7 +752,7 @@
 }
 
 /* Service Cards Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .service-cards-section {
     padding: 2rem 1rem;
   }

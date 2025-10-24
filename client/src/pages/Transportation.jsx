@@ -85,7 +85,7 @@ const Transportation = () => {
           <h2 className="distance-title">Entrances, Parking & Transportation Gates</h2>
             <div className="info-cards">
               {/* Main Entrances Card */}
-              <div className="info-card">
+              <div className="info-card" style={{borderColor: '#121212'}}>
                 <h3 className="card-title">Main Entrances</h3>
                 <ul className="entrance-list">
                   <li>
@@ -108,7 +108,7 @@ const Transportation = () => {
               </div>
 
               {/* Parking & Gates Card */}
-              <div className="info-card">
+              <div className="info-card" style={{borderColor: '#121212'}}>
                 <h3 className="card-title">Parking & Gates</h3>
                 <ul className="parking-list">
                   <li>Lot A for North/South/West events; Lot C for Lakeside Center/Arie Crown.</li>

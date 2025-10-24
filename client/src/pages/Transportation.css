@@ -18,7 +18,7 @@
 }
 
 .info-card {
-  background-color: #2d2d2d;
+  background-color: #121212;
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -29,14 +29,14 @@
   font-weight: 600;
   color: white;
   margin-bottom: 20px;
-  border-bottom: 2px solid #ffd700;
+  /* border-bottom: 2px solid #ffd700; */
   padding-bottom: 10px;
 }
 
 .entrance-list,
 .parking-list {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 20px;
   margin: 0 0 20px 0;
 }
 
@@ -46,6 +46,7 @@
   margin-bottom: 12px;
   line-height: 1.5;
   font-size: 1rem;
+  text-align: left;
 }
 
 .entrance-list li strong {
@@ -60,7 +61,7 @@
 }
 
 .info-link {
-  color: #ffd700;
+  color: #1447E6;
   text-decoration: underline;
   font-size: 0.95rem;
   transition: color 0.3s ease;
@@ -72,7 +73,7 @@
 
 /* Distance & Travel Time Section */
 .distance-section {
-  background-color: #0f0f0f;
+  background-color: #000000;
   padding: 60px 0;
   color: white;
 }
@@ -87,7 +88,7 @@
   font-size: 2.2rem;
   font-weight: 700;
   color: white;
-  text-align: center;
+  text-align: left;
   margin-bottom: 40px;
 }
 
@@ -99,17 +100,19 @@
 }
 
 .distance-card {
-  background-color: #2d2d2d;
+  background-color: #121212;
   border-radius: 12px;
   padding: 25px;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .distance-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .distance-card-title {
@@ -128,7 +131,7 @@
 }
 
 .distance-disclaimer {
-  text-align: center;
+  text-align: left;
   color: #888;
   font-size: 0.9rem;
   font-style: italic;
@@ -136,7 +139,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .info-cards {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -187,7 +190,7 @@
 
 /* Service Description Section */
 .service-description-section {
-  background-color: #0f0f0f;
+  background-color: #000000;
   padding: 60px 0;
   color: white;
 }
@@ -203,12 +206,11 @@
   font-weight: 700;
   color: white;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
 }
 
 .service-content {
   max-width: 900px;
-  margin: 0 auto;
 }
 
 .service-paragraph {
@@ -216,11 +218,11 @@
   line-height: 1.6;
   color: #e5e5e5;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .service-link {
-  color: #ffd700;
+  color: #1447E6;
   text-decoration: underline;
   transition: color 0.3s ease;
 }
@@ -245,7 +247,7 @@
   font-size: 2.2rem;
   font-weight: 700;
   color: white;
-  text-align: center;
+  text-align: left;
   margin-bottom: 40px;
 }
 
@@ -256,7 +258,7 @@
 }
 
 .faq-item {
-  background-color: #2d2d2d;
+  background-color: #121212;
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -291,7 +293,7 @@
 
 /* Fleet Section */
 .fleet-section {
-  background-color: #0f0f0f;
+  background-color: #000000;
   padding: 60px 0;
   color: white;
 }
@@ -306,33 +308,35 @@
   font-size: 2.2rem;
   font-weight: 700;
   color: white;
-  text-align: center;
+  text-align: left;
   margin-bottom: 40px;
 }
 
 .fleet-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
 }
 
 .fleet-card {
-  background-color: #2d2d2d;
+  background-color: #121212;
   border-radius: 12px;
   padding: 20px;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .fleet-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .fleet-image {
   height: 120px;
-  background-color: #404040;
+  background-color: #121212;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -367,7 +371,7 @@
 }
 
 .fleet-link {
-  color: #ffd700;
+  color: #1447E6;
   text-decoration: underline;
   font-size: 0.95rem;
   font-weight: 500;
@@ -380,7 +384,7 @@
 }
 
 /* Responsive Design for New Sections */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .service-title {
     font-size: 2rem;
   }
@@ -431,8 +435,10 @@
 
 /* Ready to Ride Banner */
 .ready-to-ride-banner {
-  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, #10b981);
   padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem 0;
 }
 
 .banner-content {
@@ -448,36 +454,37 @@
 .banner-text h2 {
   font-size: 2rem;
   font-weight: 800;
-  color: #000000;
+  color: #ffffff;
   margin: 0 0 0.5rem 0;
 }
 
 .banner-text p {
   font-size: 1rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
   margin: 0;
+  opacity: 0.95;
 }
 
 .banner-cta {
-  background: #000000;
-  color: #ffd700;
-  border: 2px solid #000000;
-  border-radius: 9999px;
-  padding: 0.9rem 1.5rem;
-  font-size: 1.1rem;
-  font-weight: 700;
+  background: #ffffff;
+  color: #1f2937;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
+  min-width: 120px;
 }
 
 .banner-cta:hover {
-  background: #ffd700;
-  color: #000000;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+  background: #f3f4f6;
+  transform: translateY(-1px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .banner-content {
     flex-direction: column;
     align-items: flex-start;
@@ -486,7 +493,7 @@
   
   .banner-cta {
     align-self: stretch;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -509,7 +516,7 @@
   width: 100%;
   max-width: 500px;
   height: 400px;
-  background-color: #1a1a1a;
+  background-color: #121212;
   border-radius: 12px;
   display: flex;
   align-items: center;

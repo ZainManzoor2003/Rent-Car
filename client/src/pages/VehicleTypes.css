@@ -19,7 +19,7 @@
 
 .section-subtitle {
   font-size: 1.1rem;
-  color: #ffd700;
+  color: #1447E6;
   margin-bottom: 40px;
   text-decoration: underline;
   cursor: pointer;
@@ -33,7 +33,7 @@
 }
 
 .vehicle-card {
-  background-color: #2d2d2d;
+  background-color: #121212;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -41,13 +41,15 @@
 }
 
 .vehicle-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .vehicle-image {
   height: 200px;
-  background-color: #404040;
+  background-color: #121212;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,7 +151,7 @@
 }
 
 .book-now-btn {
-  background-color: #ffd700;
+  background-color: #1447E6;
   color: #000;
   border: none;
   padding: 12px 24px;
@@ -169,7 +171,7 @@
 
 .check-rates-btn {
   background-color: transparent;
-  color: #ffd700;
+  color: #ffed4e;
   border: 2px solid #ffd700;
   padding: 10px 24px;
   border-radius: 6px;
@@ -181,14 +183,14 @@
 }
 
 .check-rates-btn:hover {
-  background-color: #ffd700;
+  background-color: #ffed4e;
   color: #000;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .vehicle-cards {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -232,8 +234,10 @@
 
 /* Ready to Ride Banner */
 .ready-to-ride-banner {
-  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, #10b981);
   padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem 0;
 }
 
 .banner-content {
@@ -249,36 +253,37 @@
 .banner-text h2 {
   font-size: 2rem;
   font-weight: 800;
-  color: #000000;
+  color: #ffffff;
   margin: 0 0 0.5rem 0;
 }
 
 .banner-text p {
   font-size: 1rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
   margin: 0;
+  opacity: 0.95;
 }
 
 .banner-cta {
-  background: #000000;
-  color: #ffd700;
-  border: 2px solid #000000;
-  border-radius: 9999px;
-  padding: 0.9rem 1.5rem;
-  font-size: 1.1rem;
-  font-weight: 700;
+  background: #ffffff;
+  color: #1f2937;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
+  min-width: 120px;
 }
 
 .banner-cta:hover {
-  background: #ffd700;
-  color: #000000;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+  background: #f3f4f6;
+  transform: translateY(-1px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .banner-content {
     flex-direction: column;
     align-items: flex-start;
@@ -287,7 +292,7 @@
   
   .banner-cta {
     align-self: stretch;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -310,7 +315,7 @@
   width: 100%;
   max-width: 500px;
   height: 400px;
-  background-color: #1a1a1a;
+  background-color: #121212;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -325,4 +330,72 @@
   height: 100%;
   border: none;
   border-radius: 12px;
+}
+
+/* Top Destinations Footer Section */
+.top-destinations-footer {
+  background-color: #000000;
+  padding: 40px 0;
+  /* border-top: 1px solid #333333; */
+}
+
+.top-destinations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.top-destinations-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.top-destinations-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-destinations-list li {
+  margin-bottom: 12px;
+}
+
+.top-destinations-list li:last-child {
+  margin-bottom: 0;
+}
+
+.top-destinations-link {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.top-destinations-link:hover {
+  color: #1447E6;
+  text-decoration: underline;
+}
+
+/* Responsive Design for Top Destinations */
+@media (max-width: 768px) {
+  .top-destinations-footer {
+    padding: 30px 0;
+  }
+  
+  .top-destinations-container {
+    padding: 0 1rem;
+  }
+  
+  .top-destinations-title {
+    font-size: 1.3rem;
+  }
+  
+  .top-destinations-link {
+    font-size: 0.9rem;
+  }
 }

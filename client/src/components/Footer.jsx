@@ -33,20 +33,12 @@ const Footer = () => {
           {/* Contact Section */}
           <div className="footer-section">
             <h3 className="footer-title">Contact</h3>
-            <div className="contact-info">
-              <div className="contact-item">
-                <a href="tel:855-286-6691" className="footer-link">855-286-6691</a>
-              </div>
-              <div className="contact-item">
-                <a href="mailto:info@eminentlimo.com" className="footer-link">info@eminentlimo.com</a>
-              </div>
-              <div className="contact-item">
-                <span className="footer-text">3700 S Iron St Suite 4K, Chicago, IL 60609</span>
-              </div>
-              <div className="contact-item">
-                <span className="footer-text">Open 24 hours</span>
-              </div>
-            </div>
+            <ul className="footer-links">
+              <li><a href="tel:855-286-6691" className="footer-link">855-286-6691</a></li>
+              <li><a href="mailto:info@eminentlimo.com" className="footer-link">info@eminentlimo.com</a></li>
+              <li><span className="footer-text">3700 S Iron St Suite 4K, Chicago, IL 60609</span></li>
+              <li><span className="footer-text">Open 24 hours</span></li>
+            </ul>
           </div>
         </div>
       </div>

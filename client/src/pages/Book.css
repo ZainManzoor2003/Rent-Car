@@ -46,7 +46,7 @@
 }
 
 .load-widget-btn {
-  background-color: #ffd700;
+  background-color: #1447E6;
   color: #ffffff;
   border: none;
   padding: 1rem 2rem;
@@ -64,7 +64,7 @@
 }
 
 .open-new-tab-link {
-  color: #ffd700;
+  color: #1447E6;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
@@ -86,7 +86,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #1A1A1A;
+  background-color: #121212;
 }
 
 .loading-placeholder {
@@ -101,7 +101,7 @@
 
 .loading-bar {
   height: 8px;
-  background-color: #2a2a2a;
+  background-color: #121212;
   border-radius: 4px;
   animation: loading 1.5s ease-in-out infinite;
 }
@@ -131,7 +131,7 @@
 }
 
 .widget-placeholder {
-  text-align: center;
+  text-align: left;
   z-index: 1;
 }
 
@@ -150,7 +150,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .book-online-section {
     padding: 2rem 1rem;
   }
@@ -171,11 +171,11 @@
   
   .load-widget-btn {
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
   
   .open-new-tab-link {
-    text-align: center;
+    text-align: left;
   }
   
   .widget-preview {
@@ -239,7 +239,7 @@
 }
 
 .booking-options-header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 3rem;
 }
 
@@ -265,13 +265,14 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  background-color: #1A1A1A;
+  background-color: #121212;
 }
 
 .option-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .option-card h3 {
@@ -330,13 +331,14 @@
 }
 
 .service-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .service-image {
-  background-color: #2a2a2a;
+  background-color: #121212;
   height: 120px;
   border-radius: 8px;
   display: flex;
@@ -376,7 +378,7 @@
 }
 
 .book-link {
-  color: #ffd700;
+  color: #1447E6;
   text-decoration: underline;
   font-weight: 600;
   font-size: 0.9rem;
@@ -384,7 +386,7 @@
 }
 
 .book-link:hover {
-  color: #ffd712;
+  color: #1447E6;
 }
 
 /* Booking Steps Section */
@@ -399,7 +401,7 @@
 }
 
 .booking-steps-header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 3rem;
 }
 
@@ -425,13 +427,14 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
-  background-color: #1A1A1A;
+  background-color: #121212;
 }
 
 .step-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .step-card h3 {
@@ -465,7 +468,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .booking-options-section,
   .seamless-travel-section,
   .booking-steps-section {
@@ -577,13 +580,14 @@
 }
 
 .fleet-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .fleet-image {
-  background-color: #2a2a2a;
+  background-color: #121212;
   height: 150px;
   border-radius: 8px;
   display: flex;
@@ -623,7 +627,7 @@
 }
 
 .calculate-rate-link {
-  color: #ffd700;
+  color: #1447E6;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
@@ -631,7 +635,7 @@
 }
 
 .calculate-rate-link:hover {
-  color: #ffd712;
+  color: #1447E6;
 }
 
 /* Our Fleet Responsive Design */
@@ -641,7 +645,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .our-fleet-section {
     padding: 2rem 1rem;
   }
@@ -708,7 +712,7 @@
 
 .policy-card {
   flex: 1;
-  background-color: #2d2d2d;
+  background-color: #121212;
   border-radius: 12px;
   padding: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -738,7 +742,7 @@
 
 .policy-list li::before {
   content: "•";
-  color: #ffd700;
+  color: white;
   font-size: 1.2rem;
   position: absolute;
   left: 0;
@@ -775,11 +779,11 @@
   padding: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   text-align: left;
-  background-color: #1A1A1A;
+  background-color: #121212;
 }
 
 .stars {
-  color: #ffd700;
+  color: #ffd723;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -824,7 +828,7 @@
 }
 
 .faq-card {
-  background-color: #2d2d2d;
+  background-color: #121212;
   border-radius: 12px;
   padding: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -846,7 +850,7 @@
 }
 
 /* Responsive Design for New Sections */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .billing-cancellation-section,
   .testimonials-section,
   .faq-section {
@@ -909,7 +913,7 @@
   width: 100%;
   max-width: 500px;
   height: 400px;
-  background-color: #1a1a1a;
+  background-color: #121212;
   border-radius: 12px;
   display: flex;
   align-items: center;

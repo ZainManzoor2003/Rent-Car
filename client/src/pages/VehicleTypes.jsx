@@ -471,6 +471,19 @@ const VehiceTypes = () => {
           </div>
         </div>
 
+        {/* Top Destinations Section */}
+        <section className="top-destinations-footer">
+          <div className="top-destinations-container">
+            <h3 className="top-destinations-title">Top Destinations</h3>
+            <ul className="top-destinations-list">
+              <li><a href="#" className="top-destinations-link">Chicago O'Hare International Airport</a></li>
+              <li><a href="#" className="top-destinations-link">Chicago Midway International Airport</a></li>
+              <li><a href="#" className="top-destinations-link">Sprinter Van Rental — Illinois</a></li>
+              <li><a href="#" className="top-destinations-link">Transportation Services</a></li>
+            </ul>
+          </div>
+        </section>
+
         </div>
       <Footer />
     </>

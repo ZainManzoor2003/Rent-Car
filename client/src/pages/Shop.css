@@ -1,269 +1,640 @@
-.shop-page {
-  min-height: 100vh;
+/* Eminent Limo Shop Section */
+.eminent-limo-section {
   background-color: #000000;
+  padding: 8rem 0;
   color: #ffffff;
-  padding: 2rem;
-  position: relative;
 }
 
-
-.shop-content {
+.eminent-limo-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 6rem 0 4rem 0;
+  padding: 0 2rem;
 }
 
-.shop-header {
+.eminent-limo-header {
   text-align: left;
   margin-bottom: 3rem;
 }
 
-.shop-header h1 {
-  font-size: 4rem;
-  font-weight: bold;
+.eminent-limo-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
   color: #ffffff;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1rem 0;
   line-height: 1.2;
 }
 
-.shop-header p {
-  font-size: 1.3rem;
-  color: #ffffff;
+.eminent-limo-header p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin: 0;
   line-height: 1.6;
-  opacity: 0.9;
   max-width: 800px;
 }
 
-.search-section {
-  margin-bottom: 4rem;
-  display: flex;
-  justify-content: center;
+.shop-info-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-.search-container {
+.shop-info-card {
+  background-color: #000000;
+  border: 0.5px solid #d4af37;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.shop-info-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
+}
+
+.info-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d4af37;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.info-label {
+  font-size: 1rem;
+  color: #cccccc;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .shop-info-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .eminent-limo-header h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .eminent-limo-section {
+    padding: 3rem 0;
+  }
+  
+  .eminent-limo-container {
+    padding: 0 1rem;
+  }
+  
+  .eminent-limo-header h2 {
+    font-size: 2rem;
+  }
+  
+  .eminent-limo-header p {
+    font-size: 1rem;
+  }
+  
+  .shop-info-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .shop-info-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .info-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .eminent-limo-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .info-number {
+    font-size: 1.8rem;
+  }
+  
+  .info-label {
+    font-size: 0.9rem;
+  }
+}h
+
+/* Vehicle Options & Pricing Section */
+.vehicle-pricing-section {
+  background-color: #1a1a1a;
+  padding: 60px 0;
+}
+
+.vehicle-pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.vehicle-pricing-title {
+  color: #ffd700;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.vehicle-pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.vehicle-pricing-card {
+  background-color: black;
+  border: 0.5px solid #ffd700;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
   position: relative;
-  width: 100%;
-  max-width: 600px;
 }
 
-.search-icon {
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
+.vehicle-pricing-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
+}
+
+.vehicle-emoji {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.vehicle-type {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.vehicle-passengers {
+  color: #cccccc;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.vehicle-price {
+  color: #ffd700;
   font-size: 1.2rem;
-  color: #666666;
-  z-index: 1;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Responsive Design for Vehicle Pricing */
+@media (max-width: 1024px) {
+  .vehicle-pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .vehicle-pricing-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .vehicle-pricing-section {
+    padding: 40px 0;
+  }
+  
+  .vehicle-pricing-container {
+    padding: 0 1rem;
+  }
+  
+  .vehicle-pricing-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .vehicle-pricing-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .vehicle-pricing-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .vehicle-emoji {
+    font-size: 2.5rem;
+  }
+  
+  .vehicle-type {
+    font-size: 1.2rem;
+  }
+  
+  .vehicle-price {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .vehicle-pricing-title {
+    font-size: 1.8rem;
+  }
+  
+  .vehicle-emoji {
+    font-size: 2rem;
+  }
+  
+  .vehicle-type {
+    font-size: 1.1rem;
+  }
+  
+  .vehicle-passengers {
+    font-size: 0.9rem;
+  }
+  
+  .vehicle-price {
+    font-size: 1rem;
+  }
+}
+
+/* Airport Transfer Booking Section */
+.airport-transfer-section {
+  background-color: #000000;
+  padding: 60px 0;
+}
+
+.airport-transfer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Search and Filter Header */
+.search-filter-header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-bar {
+  flex: 1;
+  min-width: 0;
 }
 
 .search-input {
   width: 100%;
-  padding: 1rem 1rem 1rem 3rem;
+  padding: 12px 16px;
   background-color: #1a1a1a;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  border: 0.5px solid #333333;
+  border-radius: 8px;
   color: #ffffff;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #ffd700;
 }
 
 .search-input::placeholder {
   color: #666666;
 }
 
-.search-input:focus {
-  outline: none;
-  border-color: #ffd700;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+.filter-buttons {
+  display: flex;
+  gap: 12px;
+  flex: 1;
 }
 
-.catalog-section {
-  background-color: #1a1a1a;
-  border-radius: 12px;
-  padding: 4rem 2rem;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.catalog-content h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 0 0 1.5rem 0;
-  line-height: 1.2;
-}
-
-.catalog-subtitle {
-  font-size: 1.5rem;
-  color: #ffffff;
-  margin: 0 0 1rem 0;
-  opacity: 0.9;
-}
-
-.catalog-description {
-  font-size: 1.1rem;
-  color: #cccccc;
-  margin: 0;
-  opacity: 0.8;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* Featured Packages Section */
-.featured-packages-section {
-  margin-bottom: 4rem;
-}
-
-.featured-packages-section h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 0 0 3rem 0;
-  line-height: 1.2;
-}
-
-.packages-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-}
-
-.package-card {
-  background-color: #1a1a1a;
-  border-radius: 12px;
-  padding: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: left;
-}
-
-.package-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-  border-color: rgba(59, 130, 246, 0.3);
-}
-
-.package-image {
-  background-color: #2a2a2a;
-  height: 200px;
-  border-radius: 8px;
+.filter-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.package-image span {
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 500;
-  opacity: 0.8;
-}
-
-.package-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  gap: 8px;
+  padding: 12px 16px;
+  background-color: #1a1a1a;
+  border: 0.5px solid #333333;
   border-radius: 8px;
-}
-
-.package-card h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
   color: #ffffff;
-  margin: 0 0 0.5rem 0;
-  line-height: 1.3;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
 }
 
-.vehicle-type {
-  font-size: 0.9rem;
+.filter-btn:hover {
+  border-color: #ffd700;
+  background-color: black;
+}
+
+.filter-icon {
+  font-size: 16px;
+}
+
+.dropdown-arrow {
+  font-size: 12px;
+  color: #666666;
+}
+
+/* Transfer Cards */
+.transfer-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.transfer-card {
+  background-color: black;
+  border: 0.5px solid #333333;
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.transfer-card:hover {
+  border-color: #ffd700;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.1);
+}
+
+.card-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: #ffd700;
+  color: #000000;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.vehicle-icon-container {
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.vehicle-icon {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.sedan-icon {
+  /* Red sedan styling handled by image */
+}
+
+.suv-icon {
+  /* Blue SUV styling handled by image */
+}
+
+.transfer-title {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+}
+
+.transfer-description {
   color: #cccccc;
-  margin: 0 0 1rem 0;
-  opacity: 0.9;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
 }
 
-.package-price {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ffd700;
-  margin: 0 0 1rem 0;
+.transfer-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
 }
 
-.package-features {
-  margin-bottom: 1.5rem;
-}
-
-.feature-item {
+.transfer-features li {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
 }
 
-.checkmark {
-  color: #10b981;
+.transfer-features li::before {
+  content: "✓";
+  color: #ffd700;
   font-weight: bold;
-  margin-right: 0.5rem;
+  margin-right: 8px;
   font-size: 1rem;
 }
 
-.feature-item span:last-child {
-  color: #ffffff;
-  font-size: 0.9rem;
+.transfer-features li:last-child {
+  margin-bottom: 0;
+}
+
+.transfer-price {
+  color: #ffd700;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
 }
 
 .add-to-cart-btn {
   width: 100%;
   background-color: #ffd700;
-  color: #ffffff;
+  color: #000000;
   border: none;
-  padding: 0.75rem 1rem;
   border-radius: 8px;
+  padding: 14px 20px;
+  font-size: 16px;
   font-weight: 600;
-  font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .add-to-cart-btn:hover {
-  background-color: #ffd712;
-  transform: translateY(-2px);
+  background-color: #ffed4e;
+  transform: translateY(-0.5px);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.cart-icon {
+  font-size: 18px;
+}
+
+/* Responsive Design for Airport Transfer */
+@media (max-width: 768px) {
+  .airport-transfer-section {
+    padding: 40px 0;
+  }
+  
+  .airport-transfer-container {
+    padding: 0 1rem;
+  }
+  
+  .search-filter-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  
+  .search-bar {
+    min-width: auto;
+  }
+  
+  .filter-buttons {
+    justify-content: center;
+  }
+  
+  .transfer-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .transfer-card {
+    padding: 1.5rem;
+  }
+  
+  .transfer-title {
+    font-size: 1.2rem;
+  }
+  
+  .transfer-price {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-buttons {
+    flex-direction: column;
+  }
+  
+  .filter-btn {
+    justify-content: center;
+  }
+  
+  .transfer-card {
+    padding: 1rem;
+  }
+  
+  .vehicle-icon-container {
+    padding: 15px;
+    margin: 15px 0;
+  }
+  
+  .vehicle-icon {
+    font-size: 2rem;
+  }
+}
+
+/* Secure Shopping Experience Section */
+.secure-shopping-section {
+  background-color: #1a1a1a;
+  padding: 60px 0;
+}
+
+.secure-shopping-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.secure-shopping-title {
+  color: #ffd700;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.secure-shopping-description {
+  color: #cccccc;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 30px 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secure-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.secure-features li {
+  color: #cccccc;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /* Browse by Category Section */
 .browse-category-section {
-  margin-bottom: 4rem;
+  background-color: #171717;
+  padding: 60px 0;
 }
 
-.browse-category-section h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 0 0 3rem 0;
-  line-height: 1.2;
+.browse-category-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.browse-category-title {
+  color: #d4af37;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 40px 0;
 }
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
 .category-card {
-  background-color: #1a1a1a;
+  background-color: black;
+  border: 0.5px solid #d4af37;
   border-radius: 12px;
-  padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .category-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-  border-color: rgba(59, 130, 246, 0.3);
+  border-color: #1447E6;
+  background-color: black;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
 }
 
 .category-icon {
@@ -272,249 +643,364 @@
   display: block;
 }
 
-.category-card h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
+.category-name {
   color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
   margin: 0 0 0.5rem 0;
-  line-height: 1.3;
 }
 
-.category-card p {
-  font-size: 0.9rem;
+.category-count {
   color: #cccccc;
+  font-size: 0.9rem;
   margin: 0;
-  opacity: 0.9;
 }
 
-/* Why Shop Our Packages Banner */
-.why-shop-banner {
-  background: linear-gradient(135deg, #ffd700, #10b981);
-  border-radius: 12px;
-  padding: 3rem 2rem;
-  margin-bottom: 4rem;
+/* Our Services Shop Section */
+.our-services-shop-section {
+  background-color: black;
+  padding: 60px 0;
 }
 
-.why-shop-content h2 {
+.our-services-shop-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.our-services-shop-title {
+  color: #ffd700;
   font-size: 2.5rem;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 0 0 2rem 0;
-  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 40px 0;
 }
 
-.why-shop-columns {
+.shop-services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
   gap: 2rem;
 }
 
-.why-shop-column h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 0 0 0.5rem 0;
-  line-height: 1.3;
-}
-
-.why-shop-column p {
-  font-size: 1rem;
-  color: #ffffff;
-  margin: 0;
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .shop-page {
-    padding: 1rem;
-  }
-  
-  .shop-content {
-    padding: 4rem 0 2rem 0;
-  }
-  
-  .shop-header h1 {
-    font-size: 2.5rem;
-  }
-  
-  .shop-header p {
-    font-size: 1.1rem;
-  }
-  
-  .catalog-content h2 {
-    font-size: 2.5rem;
-  }
-  
-  .catalog-subtitle {
-    font-size: 1.3rem;
-  }
-  
-  .catalog-description {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .shop-header h1 {
-    font-size: 2rem;
-  }
-  
-  .shop-header p {
-    font-size: 1rem;
-  }
-  
-  .catalog-content h2 {
-    font-size: 2rem;
-  }
-  
-  .catalog-subtitle {
-    font-size: 1.2rem;
-  }
-  
-  .catalog-description {
-    font-size: 0.9rem;
-  }
-  
-  .catalog-section {
-    padding: 3rem 1.5rem;
-  }
-
-  /* Featured Packages Responsive */
-  .featured-packages-section h2 {
-    font-size: 2.5rem;
-  }
-  
-  .packages-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .package-card {
-    padding: 1.25rem;
-  }
-  
-  .package-image {
-    height: 150px;
-  }
-  
-  .package-price {
-    font-size: 1.75rem;
-  }
-
-  /* Browse Category Responsive */
-  .browse-category-section h2 {
-    font-size: 2.5rem;
-  }
-  
-  .category-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .category-card {
-    padding: 1.5rem;
-  }
-  
-  .category-icon {
-    font-size: 2.5rem;
-  }
-
-  /* Why Shop Banner Responsive */
-  .why-shop-banner {
-    padding: 2rem 1.5rem;
-  }
-  
-  .why-shop-content h2 {
-    font-size: 2rem;
-  }
-  
-  .why-shop-columns {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .why-shop-column h3 {
-    font-size: 1.3rem;
-  }
-  
-  .why-shop-column p {
-    font-size: 0.9rem;
-  }
-}
-
-/* Ready to Ride Banner */
-.ready-to-ride-banner {
-  background: linear-gradient(135deg, #ffd700, #ffed4e);
-  padding: 2rem;
-}
-
-.banner-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  background: transparent;
-}
-
-.banner-text h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #000000;
-  margin: 0 0 0.5rem 0;
-}
-
-.banner-text p {
-  font-size: 1rem;
-  color: rgba(0, 0, 0, 0.8);
-  margin: 0;
-}
-
-.banner-cta {
-  background: #000000;
-  color: #ffd700;
-  border: 2px solid #000000;
-  border-radius: 9999px;
-  padding: 0.9rem 1.5rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-  cursor: pointer;
+.service-card-shop {
+  background-color: black;
+  border: 0.5px solid #ffd700;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: left;
   transition: all 0.3s ease;
 }
 
-.banner-cta:hover {
-  background: #ffd700;
-  color: #000000;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+.service-card-shop:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
+}
+
+.service-icon-shop {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.service-title-shop {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.service-description-shop {
+  color: #cccccc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Our Fleet Shop Section */
+.our-fleet-shop-section {
+  background-color: #171717;
+  padding: 60px 0;
+}
+
+.our-fleet-shop-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.our-fleet-shop-title {
+  color: #ffd700;
+    font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.fleet-grid-shop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.fleet-card-shop {
+  background-color:black;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 0.5px solid #ffd700;
+}
+
+.fleet-card-shop:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.fleet-image-container {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fleet-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fleet-type {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.fleet-capacity {
+  color: #cccccc;
+    font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.fleet-description {
+  color: #cccccc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Why Shop Our Packages Section */
+.why-shop-section {
+  background-color: #000000;
+  padding: 60px 0;
+}
+
+.why-shop-container {
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+}
+
+.why-shop-title {
+  color: #C0A060;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 2rem 0;
+  font-family: sans-serif;
+}
+
+.benefits-container {
+  background-color: #211D18;
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border: 0.5px solid #C0A060;
+  margin: 0;
+  width: 100%;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.benefit-card {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  text-align: left;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.benefit-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  display: block;
+  color: #C0A060;
+  text-align: left;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.benefit-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit-title {
+  color: #F5F5F5;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 0.8rem 0;
+  text-align: left;
+  font-family: sans-serif;
+  line-height: 1.2;
+}
+
+.benefit-description {
+  color: #B0B0B0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 1024px) {
+  .category-grid,
+  .fleet-grid-shop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .benefits-container {
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+  }
+  
+  .why-shop-title {
+    font-size: 2rem;
+  }
+  
+  .benefit-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
 }
 
 @media (max-width: 768px) {
-  .banner-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
+  .secure-shopping-section,
+  .browse-category-section,
+  .our-services-shop-section,
+  .our-fleet-shop-section,
+  .why-shop-section {
+    padding: 40px 0;
   }
   
-  .banner-cta {
-    align-self: stretch;
+  .secure-shopping-container,
+  .browse-category-container,
+  .our-services-shop-container,
+  .our-fleet-shop-container,
+  .why-shop-container {
+    padding: 0 1rem;
+  }
+  
+  .secure-shopping-title,
+  .browse-category-title,
+  .our-services-shop-title,
+  .our-fleet-shop-title,
+  .why-shop-title {
+    font-size: 2rem;
+  }
+  
+  .secure-features {
+    gap: 20px;
+  }
+  
+  .category-grid,
+  .services-grid,
+  .fleet-grid-shop,
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .benefits-container {
+    padding: 2rem 1rem;
+    border-radius: 18px;
+  }
+  
+  .why-shop-title {
+    font-size: 1.8rem;
+  }
+  
+  .benefit-card {
+    flex-direction: column;
     text-align: center;
+  }
+  
+  
+  .benefit-title {
+    font-size: 1.2rem;
+  }
+  
+  .benefit-description {
+    font-size: 0.9rem;
+  }
+  
+  .category-card,
+  .service-card-shop,
+  .fleet-card-shop {
+    padding: 1.5rem 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .ready-to-ride-banner {
-    padding: 1.5rem 1rem;
+  .secure-shopping-title,
+  .browse-category-title,
+  .our-services-shop-title,
+  .our-fleet-shop-title,
+  .why-shop-title {
+    font-size: 1.8rem;
   }
   
-  .banner-content h2 {
-    font-size: 1.5rem;
+  .secure-features {
+    flex-direction: column;
+    gap: 15px;
   }
   
-  .banner-content p {
-    font-size: 0.9rem;
+  .category-icon,
+  .service-icon-shop,
+  .fleet-emoji,
+  .benefit-icon {
+    font-size: 2.5rem;
   }
 }
