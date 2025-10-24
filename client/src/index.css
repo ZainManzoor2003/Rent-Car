@@ -27,9 +27,6 @@ body.light-mode {
   background-color: #ffffff;
   color: #000000;
 }
-body.light-mode label {
-  color: #000000;
-}
 
 body.light-mode * {
   background-color: inherit;
@@ -63,7 +60,6 @@ body.light-mode .attraction-card,
 body.light-mode .neighborhood-card,
 body.light-mode .suburb-city-card,
 body.light-mode .city-card,
-body.light-mode .shop-info-card,
 body.light-mode .distance-card {
   background-color: #ffffff !important;
   color: #000000 !important;
@@ -161,68 +157,4 @@ body.light-mode a {
 
 body.light-mode a:hover {
   color: #0d47a1 !important;
-}
-
-/* Light Mode Card Borders - Only for cards that need borders */
-body.light-mode .service-card,
-body.light-mode .fleet-card,
-body.light-mode .destination-card,
-body.light-mode .vehicle-card,
-body.light-mode .option-card,
-body.light-mode .step-card,
-body.light-mode .testimonial-card,
-body.light-mode .faq-item,
-body.light-mode .benefit-card,
-body.light-mode .category-card,
-body.light-mode .transfer-card,
-body.light-mode .fleet-card-shop,
-body.light-mode .service-card-shop,
-body.light-mode .vehicle-pricing-card,
-body.light-mode .info-card,
-body.light-mode .partner-card,
-body.light-mode .review-card,
-body.light-mode .attraction-card,
-body.light-mode .neighborhood-card,
-body.light-mode .suburb-city-card,
-body.light-mode .city-card,
-body.light-mode .distance-card,
-body.light-mode .destination-item,
-body.light-mode .suburb-city-item,
-body.light-mode .neighborhood-item,
-body.light-mode .faq-card,
-body.light-mode .policy-card,
-body.light-mode .rate-form-container,
-body.light-mode .widget-preview,
-body.light-mode .customer-testimonial-card,
-body.light-mode .service-card-grid,
-body.light-mode .contact-info,
-body.light-mode .contact-form-container,
-body.light-mode .vehicle-option,
-body.light-mode .attraction-item {
-  border: 1px solid #e0e0e0 !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-}
-
-/* Light Mode Form Elements Borders */
-body.light-mode input,
-body.light-mode select,
-body.light-mode textarea,
-body.light-mode .form-input,
-body.light-mode .form-select,
-body.light-mode .search-input,
-body.light-mode .filter-input,
-body.light-mode .filter-select {
-  border: 1px solid #e0e0e0 !important;
-}
-
-/* Light Mode Button Borders */
-body.light-mode button:not(.nav-link)
-body.light-mode .filter-btn,
-body.light-mode .add-to-cart-btn,
-body.light-mode .banner-cta {
-  border: 1px solid #1447E6 !important;
-}
-
-body.light-mode .light-mode-btn {
-  border: 1px solid #e0e0e0 !important;
 }

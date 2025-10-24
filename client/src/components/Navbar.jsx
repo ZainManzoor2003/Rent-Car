@@ -133,7 +133,7 @@ const Navbar = ({ isMobile = false, showHamburger = false }) => {
         {/* Right Section - Buttons */}
         <div className="navbar-right">
           <button className="light-mode-btn" onClick={toggleLightMode}>
-            Light Mode
+            {isLightMode ? 'Dark Mode' : 'Light Mode'}
           </button>
           <Link to="/check-rates" className="check-rates-btn" style={{ borderRadius: '25px' }}>
             Check Rates
@@ -205,7 +205,7 @@ const Navbar = ({ isMobile = false, showHamburger = false }) => {
               
               <div className="mobile-nav-buttons">
                 <button className="mobile-light-mode-btn" onClick={toggleLightMode}>
-                  Light Mode
+                  {isLightMode ? 'Dark Mode' : 'Light Mode'}
                 </button>
                 <Link to="/check-rates" className="mobile-check-rates-btn" onClick={toggleMobileMenu}>
                   Check Rates
