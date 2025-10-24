@@ -83,10 +83,59 @@ const Services = () => {
           </div>
         </div>
 
+        {/* Service Categories Section */}
+        <section className="service-categories-section">
+          <div className="service-categories-container">
+            <div className="service-categories-grid">
+              <div className="service-category-card">
+                <h3>AIRPORT TRANSPORTATION</h3>
+                <p>Are you flying in/out of O'Hare (ORD) and Midway (MDW)? Eminent Limo provides a comfortable and on-time ride to and from the airport. Professional limo and car service in Chicago and across Chicagoland.</p>
+                <a href="/check-rates" className="check-rates-link">CHECK RATES</a>
+              </div>
+              <div className="service-category-card">
+                <h3>GROUP TRANSPORTATION</h3>
+                <p>Moving teams, tour groups, or large parties? Our Sprinter vans (11-14 passengers) and mini buses (23-50 passengers) offer comfortable group travel with luggage space for sports teams, corporate outings, university moves, and multi-stop tours.</p>
+                <a href="/check-rates" className="check-rates-link">CHECK RATES</a>
+              </div>
+              <div className="service-category-card">
+                <h3>CORPORATE TRANSPORTATION</h3>
+                <p>In Chicago for a conference, convention, or expo? We offer a large fleet—from 2-passenger sedans to 50-passenger buses—for seamless executive travel.</p>
+                <a href="/check-rates" className="check-rates-link">CHECK RATES</a>
+              </div>
+              <div className="service-category-card">
+                <h3>SPECIAL OCCASIONS</h3>
+                <p>Charters for sporting events, prom, a night out, or concerts. Need a limo, our Sprinter vans or party buses for larger groups.</p>
+                <a href="/check-rates" className="check-rates-link">CHECK RATES</a>
+              </div>
+              <div className="service-category-card">
+                <h3>WEDDING TRANSPORTATION</h3>
+                <p>Let us help make your day stress-free. Hourly service featuring elegant sedans, limos, and limousine buses with professional chauffeurs.</p>
+                <a href="/check-rates" className="check-rates-link">CHECK RATES</a>
+              </div>
+              <div className="service-category-card">
+                <h3>HOURLY CHARTERS</h3>
+                <p>Enjoy the flexibility of hourly service for business meetings, city tours, or a night out. Your chauffeur is on standby for as long as you need.</p>
+                <a href="/check-rates" className="check-rates-link">CHECK RATES</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Calculate Rate Banner */}
+        <div className="ready-to-ride-banner">
+          <div className="banner-content">
+            <div className="banner-text">
+              <h2>Calculate an Instant Rate</h2>
+              <p>Check hourly rates and get instant pricing for your service.</p>
+            </div>
+            <button className="banner-cta">Book Now</button>
+          </div>
+        </div>
+
         {/* Our Fleet Section */}
         <div className="fleet-section">
           <div className="fleet-container">
-            <div className="fleet-header">
+            <div className="fleet-header" style={{flexDirection:'column', alignItems:'start'}}>
               <h2>Our Fleet</h2>
               <p>Choose from a large fleet, ranging from two-passenger economy sedans to 50-passenger buses. Sprinter vans and minibuses are perfect for group transportation needs.</p>
             </div>
@@ -135,16 +184,7 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Calculate Rate Banner */}
-        <div className="ready-to-ride-banner">
-          <div className="banner-content">
-            <div className="banner-text">
-              <h2>Calculate an Instant Rate</h2>
-              <p>Check hourly rates and get instant pricing for your service.</p>
-            </div>
-            <button className="banner-cta">Book Now</button>
-          </div>
-        </div>
+        
 
         {/* Customer Testimonials Section */}
         <div className="customer-testimonials-section">
@@ -223,6 +263,7 @@ const Services = () => {
           </div>
         </div>
 
+        
        
         </div>
       <Footer />

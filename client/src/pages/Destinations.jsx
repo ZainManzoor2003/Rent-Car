@@ -272,7 +272,7 @@ const Destinations = () => {
           <div className="more-destinations-container">
             <div className="more-destinations-header">
               <h2>More Destinations — Pick Your Vehicle</h2>
-              <p>Quick links for popular cities. Choose a class and calculate an instant rate.</p>
+              <p style={{margin:'0'}}>Quick links for popular cities. Choose a class and calculate an instant rate.</p>
             </div>
 
             <div className="filter-section">

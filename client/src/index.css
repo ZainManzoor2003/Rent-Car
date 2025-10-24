@@ -20,10 +20,11 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
 }
 
 /* Light Mode Styles */
-body.light-mode {
+body.light-mode,body.light-mode label {
   background-color: #ffffff;
   color: #000000;
 }
@@ -59,6 +60,14 @@ body.light-mode .review-card,
 body.light-mode .attraction-card,
 body.light-mode .neighborhood-card,
 body.light-mode .suburb-city-card,
+body.light-mode .widget-preview,
+body.light-mode .policy-card,
+body.light-mode .rate-form-container,
+body.light-mode .shop-info-card,
+body.light-mode .faq-card,
+body.light-mode .customer-testimonial-card,
+body.light-mode .cta-section,
+body.light-mode .service-card-grid,
 body.light-mode .city-card,
 body.light-mode .distance-card {
   background-color: #ffffff !important;

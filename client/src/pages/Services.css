@@ -399,7 +399,7 @@
 
 .customer-review-links {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
@@ -438,6 +438,10 @@
 
 .cta-section {
   text-align: left;
+  background-color: #121212;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cta-section h2 {
@@ -845,4 +849,103 @@
   height: 100%;
   border: none;
   border-radius: 12px;
+}
+
+/* Service Categories Section */
+.service-categories-section {
+  padding: 4rem 0;
+  background-color: #000000;
+}
+
+.service-categories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.service-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.service-category-card {
+  background-color: #121212;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #333333;
+  transition: all 0.3s ease;
+}
+
+.service-category-card:hover {
+  border-color: #1447E6;
+  background-color: #1a1a1a;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(20, 71, 230, 0.2);
+}
+
+.service-category-card h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.service-category-card p {
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.service-category-card .check-rates-link {
+  color: #1447E6;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.service-category-card .check-rates-link:hover {
+  color: #0f38b3;
+}
+
+/* Service Categories Responsive Design */
+@media (max-width: 768px) {
+  .service-categories-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-category-card {
+    padding: 1.5rem;
+  }
+
+  .service-category-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .service-category-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-categories-section {
+    padding: 2rem 0;
+  }
+
+  .service-categories-container {
+    padding: 0 1rem;
+  }
+
+  .service-category-card {
+    padding: 1.2rem;
+  }
+
+  .service-category-card h3 {
+    font-size: 1.1rem;
+  }
 }
