@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/Logo.png';
@@ -9,6 +9,12 @@ const Navbar = ({ isMobile = false, showHamburger = false }) => {
   const [isLightMode, setIsLightMode] = useState(false);
   const [isPagesDropdownOpen, setIsPagesDropdownOpen] = useState(false);
   const location = useLocation();
+
+  // Initialize light mode state on component mount
+  useEffect(() => {
+    const isLightModeActive = document.body.classList.contains('light-mode');
+    setIsLightMode(isLightModeActive);
+  }, []);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -23,7 +29,27 @@ const Navbar = ({ isMobile = false, showHamburger = false }) => {
   };
 
   const toggleLightMode = () => {
-    setIsLightMode(!isLightMode);
+    const newLightMode = !isLightMode;
+    setIsLightMode(newLightMode);
+    
+    // Apply light mode styles to document
+    if (newLightMode) {
+      document.documentElement.style.setProperty('--bg-primary', '#ffffff');
+      document.documentElement.style.setProperty('--bg-secondary', '#f5f5f5');
+      document.documentElement.style.setProperty('--bg-card', '#ffffff');
+      document.documentElement.style.setProperty('--text-primary', '#000000');
+      document.documentElement.style.setProperty('--text-secondary', '#333333');
+      document.documentElement.style.setProperty('--border-color', '#e0e0e0');
+      document.body.classList.add('light-mode');
+    } else {
+      document.documentElement.style.setProperty('--bg-primary', '#000000');
+      document.documentElement.style.setProperty('--bg-secondary', '#121212');
+      document.documentElement.style.setProperty('--bg-card', '#121212');
+      document.documentElement.style.setProperty('--text-primary', '#ffffff');
+      document.documentElement.style.setProperty('--text-secondary', '#cccccc');
+      document.documentElement.style.setProperty('--border-color', '#333333');
+      document.body.classList.remove('light-mode');
+    }
   };
 
   const togglePagesDropdown = () => {

@@ -1,8 +1,228 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #121212;
+  --bg-card: #121212;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --border-color: #333333;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+body.light-mode label {
+  color: #000000;
+}
+
+body.light-mode * {
+  background-color: inherit;
+  color: inherit;
+}
+
+/* Light Mode Overrides */
+body.light-mode .navbar,
+body.light-mode .footer,
+body.light-mode section,
+body.light-mode .container,
+body.light-mode .card,
+body.light-mode .service-card,
+body.light-mode .fleet-card,
+body.light-mode .destination-card,
+body.light-mode .vehicle-card,
+body.light-mode .option-card,
+body.light-mode .step-card,
+body.light-mode .testimonial-card,
+body.light-mode .faq-item,
+body.light-mode .benefit-card,
+body.light-mode .category-card,
+body.light-mode .transfer-card,
+body.light-mode .fleet-card-shop,
+body.light-mode .service-card-shop,
+body.light-mode .vehicle-pricing-card,
+body.light-mode .info-card,
+body.light-mode .partner-card,
+body.light-mode .review-card,
+body.light-mode .attraction-card,
+body.light-mode .neighborhood-card,
+body.light-mode .suburb-city-card,
+body.light-mode .city-card,
+body.light-mode .shop-info-card,
+body.light-mode .distance-card {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #e0e0e0 !important;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6,
+body.light-mode p,
+body.light-mode span,
+body.light-mode div,
+body.light-mode li,
+body.light-mode a {
+  color: #000000 !important;
+}
+
+body.light-mode .navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+}
+
+body.light-mode .footer {
+  background-color: #f5f5f5 !important;
+  color: #000000 !important;
+}
+
+body.light-mode .nav-link,
+body.light-mode .footer-link {
+  color: #000000 !important;
+}
+
+body.light-mode .nav-link:hover,
+body.light-mode .footer-link:hover {
+  color: #1447E6 !important;
+}
+
+/* Light Mode Form Elements */
+body.light-mode input,
+body.light-mode select,
+body.light-mode textarea {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #e0e0e0 !important;
+}
+
+body.light-mode input::placeholder,
+body.light-mode textarea::placeholder {
+  color: #666666 !important;
+}
+
+/* Light Mode Buttons */
+body.light-mode button:not(.nav-link) {
+  background-color: #1447E6 !important;
+  color: #ffffff !important;
+  border-color: #1447E6 !important;
+}
+
+body.light-mode .light-mode-btn {
+  background-color: #f0f0f0 !important;
+  color: #000000 !important;
+  border-color: #e0e0e0 !important;
+}
+
+/* Light Mode Special Elements */
+body.light-mode .ready-to-ride-banner {
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, #10b981) !important;
+  color: #ffffff !important;
+}
+
+body.light-mode .banner-text h2,
+body.light-mode .banner-text p {
+  color: #ffffff !important;
+}
+
+body.light-mode .banner-cta {
+  background: #ffffff !important;
+  color: #1f2937 !important;
+}
+
+/* Light Mode Icons and Accents */
+body.light-mode .benefit-icon,
+body.light-mode .service-icon,
+body.light-mode .fleet-emoji {
+  color: #1447E6 !important;
+}
+
+/* Light Mode Links */
+body.light-mode a {
+  color: #1447E6 !important;
+}
+
+body.light-mode a:hover {
+  color: #0d47a1 !important;
+}
+
+/* Light Mode Card Borders - Only for cards that need borders */
+body.light-mode .service-card,
+body.light-mode .fleet-card,
+body.light-mode .destination-card,
+body.light-mode .vehicle-card,
+body.light-mode .option-card,
+body.light-mode .step-card,
+body.light-mode .testimonial-card,
+body.light-mode .faq-item,
+body.light-mode .benefit-card,
+body.light-mode .category-card,
+body.light-mode .transfer-card,
+body.light-mode .fleet-card-shop,
+body.light-mode .service-card-shop,
+body.light-mode .vehicle-pricing-card,
+body.light-mode .info-card,
+body.light-mode .partner-card,
+body.light-mode .review-card,
+body.light-mode .attraction-card,
+body.light-mode .neighborhood-card,
+body.light-mode .suburb-city-card,
+body.light-mode .city-card,
+body.light-mode .distance-card,
+body.light-mode .destination-item,
+body.light-mode .suburb-city-item,
+body.light-mode .neighborhood-item,
+body.light-mode .faq-card,
+body.light-mode .policy-card,
+body.light-mode .rate-form-container,
+body.light-mode .widget-preview,
+body.light-mode .customer-testimonial-card,
+body.light-mode .service-card-grid,
+body.light-mode .contact-info,
+body.light-mode .contact-form-container,
+body.light-mode .vehicle-option,
+body.light-mode .attraction-item {
+  border: 1px solid #e0e0e0 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Light Mode Form Elements Borders */
+body.light-mode input,
+body.light-mode select,
+body.light-mode textarea,
+body.light-mode .form-input,
+body.light-mode .form-select,
+body.light-mode .search-input,
+body.light-mode .filter-input,
+body.light-mode .filter-select {
+  border: 1px solid #e0e0e0 !important;
+}
+
+/* Light Mode Button Borders */
+body.light-mode button:not(.nav-link)
+body.light-mode .filter-btn,
+body.light-mode .add-to-cart-btn,
+body.light-mode .banner-cta {
+  border: 1px solid #1447E6 !important;
+}
+
+body.light-mode .light-mode-btn {
+  border: 1px solid #e0e0e0 !important;
 }

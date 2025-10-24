@@ -88,17 +88,17 @@ const Transportation = () => {
               <div className="info-card" style={{borderColor: '#121212'}}>
                 <h3 className="card-title">Main Entrances</h3>
                 <ul className="entrance-list">
-                  <li>
-                    <strong>North & South:</strong> 2301 S. Dr. Martin Luther King Jr. Dr., Chicago
+                  <li style={{textAlign:'left'}}>
+                    North & South: 2301 S. Dr. Martin Luther King Jr. Dr., Chicago
                   </li>
-                  <li>
-                    <strong>West:</strong> 2301 S. Indiana Ave., Chicago
+                  <li style={{textAlign:'left'}}>
+                   West: 2301 S. Indiana Ave., Chicago
                   </li>
-                  <li>
-                    <strong>Lakeside Center & Arie Crown Theater:</strong> 2301 S. DuSable Lake Shore Dr., Chicago
+                  <li style={{textAlign:'left'}}>
+                    Lakeside Center & Arie Crown Theater: 2301 S. DuSable Lake Shore Dr., Chicago
                   </li>
-                  <li>
-                    <strong>Wintrust Arena:</strong> 200 E. Cermak Rd., Chicago, IL 60616
+                  <li style={{textAlign:'left'}}>
+                    Wintrust Arena: 200 E. Cermak Rd., Chicago, IL 60616
                   </li>
                 </ul>
                 <div className="card-links">
@@ -111,9 +111,9 @@ const Transportation = () => {
               <div className="info-card" style={{borderColor: '#121212'}}>
                 <h3 className="card-title">Parking & Gates</h3>
                 <ul className="parking-list">
-                  <li>Lot A for North/South/West events; Lot C for Lakeside Center/Arie Crown.</li>
-                  <li>During major shows, rideshare/ground pickups often use Gate 40 (West) on S. Indiana Ave.</li>
-                  <li>We coordinate curbside in real time—your chauffeur texts updates and staging ETA.</li>
+                  <li style={{textAlign:'left'}}>Lot A for North/South/West events; Lot C for Lakeside Center/Arie Crown.</li>
+                  <li style={{textAlign:'left'}}>During major shows, rideshare/ground pickups often use Gate 40 (West) on S. Indiana Ave.</li>
+                  <li style={{textAlign:'left'}}>We coordinate curbside in real time—your chauffeur texts updates and staging ETA.</li>
                 </ul>
               </div>
             </div>
