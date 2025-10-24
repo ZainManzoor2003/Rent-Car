@@ -134,7 +134,7 @@
 }
 
 .rate-form-container {
-  max-width: 800px;
+  max-width: 80%;
   margin: 0 auto;
   border-radius: 12px;
   padding: 2rem;
@@ -597,7 +597,7 @@
 
 .faq-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
 }
 

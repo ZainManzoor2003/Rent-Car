@@ -324,7 +324,8 @@ const CheckRates = () => {
               </div>
 
               <div className="form-actions">
-                <button type="submit" className="check-rates-btn">
+                <button type="submit" className="check-rates-btn" 
+                style={{backgroundColor: '#1447E6', color: 'white', border: 'none', boxShadow:'none'}}>
                   Check Rates (Modal)
                 </button>
                 <button type="button" className="open-rates-btn" onClick={openInNewTab}>
