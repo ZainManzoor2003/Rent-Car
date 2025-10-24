@@ -53,7 +53,7 @@ const Destinations = () => {
           <div className="suburbs-cities-container">
             <div className="suburbs-cities-header">
               <h2>Suburbs & Cities in Illinois</h2>
-              <p>Popular origins/destinations for corporate, family, and event travel.</p>
+              <p style={{margin:'0'}}>Popular origins/destinations for corporate, family, and event travel.</p>
             </div>
             <div className="suburbs-cities-grid">
               <div className="suburb-city-card">
@@ -113,7 +113,7 @@ const Destinations = () => {
           <div className="neighborhoods-container">
             <div className="neighborhoods-header">
               <h2>Chicago Neighborhoods</h2>
-              <p>From lakefront culture to foodie hotspots and historic districts</p>
+              <p style={{margin:'0'}}>From lakefront culture to foodie hotspots and historic districts</p>
             </div>
             <div className="neighborhoods-grid">
               <div className="neighborhood-card">
@@ -153,7 +153,7 @@ const Destinations = () => {
           <div className="attractions-container">
             <div className="attractions-header">
               <h2>Downtown Chicago & Nearby Attractions</h2>
-              <p>Landmarks, convention centers, and fan-favorite venues.</p>
+              <p style={{margin:'0'}}>Landmarks, convention centers, and fan-favorite venues.</p>
             </div>
             <div className="attractions-grid">
               <div className="attraction-card">
@@ -193,7 +193,7 @@ const Destinations = () => {
           <div className="long-distances-container">
             <div className="long-distances-header">
               <h2>Long Distances — City & State Highlights</h2>
-              <p>Comfortable long-haul service with luggage room and group options. Ideal for university moves, game days, conferences, and weekend getaways.</p>
+              <p style={{margin:'0'}}>Comfortable long-haul service with luggage room and group options. Ideal for university moves, game days, conferences, and weekend getaways.</p>
             </div>
 
             <div className="destinations-grid">
