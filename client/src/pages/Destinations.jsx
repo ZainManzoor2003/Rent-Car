@@ -48,6 +48,146 @@ const Destinations = () => {
           </div>
         </div>
 
+         {/* Suburbs & Cities in Illinois Section */}
+         <div className="suburbs-cities-section">
+          <div className="suburbs-cities-container">
+            <div className="suburbs-cities-header">
+              <h2>Suburbs & Cities in Illinois</h2>
+              <p>Popular origins/destinations for corporate, family, and event travel.</p>
+            </div>
+            <div className="suburbs-cities-grid">
+              <div className="suburb-city-card">
+                <h3>Naperville</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="suburb-city-card">
+                <h3>Schaumburg</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="suburb-city-card">
+                <h3>Evanston</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="suburb-city-card">
+                <h3>Skokie</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="suburb-city-card">
+                <h3>Winnetka</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="suburb-city-card">
+                <h3>Arlington Heights</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="suburb-city-card">
+                <h3>Joliet</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="suburb-city-card">
+                <h3>Elgin</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="suburb-city-card">
+                <h3>Northbrook</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="suburb-city-card">
+                <h3>Downers Grove</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="suburb-city-card">
+                <h3>Orland Park</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="suburb-city-card">
+                <h3>Palatine</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Chicago Neighborhoods Section */}
+        <div className="neighborhoods-section">
+          <div className="neighborhoods-container">
+            <div className="neighborhoods-header">
+              <h2>Chicago Neighborhoods</h2>
+              <p>From lakefront culture to foodie hotspots and historic districts</p>
+            </div>
+            <div className="neighborhoods-grid">
+              <div className="neighborhood-card">
+                <h3>Lincoln Park</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="neighborhood-card">
+                <h3>Hyde Park</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="neighborhood-card">
+                <h3>West Loop</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="neighborhood-card">
+                <h3>South Loop</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="neighborhood-card">
+                <h3>Wicker Park</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="neighborhood-card">
+                <h3>Logan Square</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="neighborhood-card">
+                <h3>Bridgeport</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Downtown Chicago & Nearby Attractions Section */}
+        <div className="attractions-section">
+          <div className="attractions-container">
+            <div className="attractions-header">
+              <h2>Downtown Chicago & Nearby Attractions</h2>
+              <p>Landmarks, convention centers, and fan-favorite venues.</p>
+            </div>
+            <div className="attractions-grid">
+              <div className="attraction-card">
+                <h3>Magnificent Mile</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="attraction-card">
+                <h3>Navy Pier</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="attraction-card">
+                <h3>Willis Tower</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="attraction-card">
+                <h3>Art Institute of Chicago</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="attraction-card">
+                <h3>United Center</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="attraction-card">
+                <h3>Soldier Field</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="attraction-card">
+                <h3>Museum Campus</h3>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Long Distances Section */}
         <div className="long-distances-section">
           <div className="long-distances-container">
@@ -314,6 +454,8 @@ const Destinations = () => {
             </div>
           </div>
         </div>
+
+       
         </div>
       <Footer />
     </>

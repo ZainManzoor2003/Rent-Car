@@ -12,3 +12,765 @@
 }
 
 /* Add any additional homepage-specific styles here */
+
+/* Trusted Partners Section */
+.trusted-partners-section {
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.trusted-partners-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trusted-partners-header {
+  margin-bottom: 3rem;
+}
+
+.trusted-partners-header h2 {
+  color: #cccccc;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.partner-card {
+  background-color: #2a2a2a;
+  border: 1px solid #444444;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-card:hover {
+  border-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.partner-card span {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Fleet Overview Section */
+.fleet-overview-section {
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.fleet-overview-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fleet-overview-header {
+  margin-bottom: 3rem;
+}
+
+.fleet-overview-header h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.fleet-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.fleet-card {
+  background-color: #2a2a2a;
+  border: 1px solid #444444;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.fleet-card:hover {
+  border-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.fleet-image {
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  padding: 3rem 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.fleet-image span {
+  color: #cccccc;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.fleet-card h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.fleet-card p {
+  color: #cccccc;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.book-now-link {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.book-now-link:hover {
+  color: #ffd712;
+}
+
+/* Seamless Travel Section */
+.seamless-travel-section {
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.seamless-travel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seamless-travel-header {
+  margin-bottom: 3rem;
+}
+
+.seamless-travel-header h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.service-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #2a2a2a;
+  border: 1px solid #444444;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  border-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.service-image {
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  padding: 3rem 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.service-image span {
+  color: #cccccc;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.service-card h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  color: #cccccc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .trusted-partners-section,
+  .fleet-overview-section,
+  .seamless-travel-section {
+    padding: 2rem 1rem;
+  }
+
+  .trusted-partners-header h2,
+  .fleet-overview-header h2,
+  .seamless-travel-header h2 {
+    font-size: 2rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .partner-card {
+    padding: 1rem 0.5rem;
+    min-height: 60px;
+  }
+
+  .partner-card span {
+    font-size: 0.8rem;
+  }
+
+  .fleet-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .fleet-card,
+  .service-card {
+    padding: 1rem;
+  }
+
+  .fleet-image,
+  .service-image {
+    padding: 2rem 1rem;
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .partner-card {
+    padding: 1rem;
+    min-height: 50px;
+  }
+
+  .partner-card span {
+    font-size: 0.75rem;
+  }
+}
+
+/* Our Services Section */
+.our-services-section {
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.our-services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.our-services-header {
+  margin-bottom: 3rem;
+}
+
+.our-services-header h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.services-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #2a2a2a;
+  border: 1px solid #444444;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  border-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.service-image {
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  padding: 3rem 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.service-image span {
+  color: #cccccc;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.service-card h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Top Destinations Section */
+.top-destinations-section {
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.top-destinations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-destinations-header {
+  margin-bottom: 3rem;
+}
+
+.top-destinations-header h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.destinations-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.destination-card {
+  background-color: #2a2a2a;
+  border: 1px solid #444444;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.destination-card:hover {
+  border-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.destination-image {
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  padding: 3rem 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.destination-image span {
+  color: #cccccc;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.destination-card h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Customer Reviews Section */
+.customer-reviews-section {
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.customer-reviews-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.customer-reviews-header {
+  margin-bottom: 3rem;
+}
+
+.customer-reviews-header h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.reviews-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.review-card {
+  background-color: #2a2a2a;
+  border: 1px solid #444444;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.review-card:hover {
+  border-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.review-card p {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.stars {
+  color: #ffd700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.review-author {
+  color: #cccccc;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Our Fleet Section */
+.our-fleet-section {
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.our-fleet-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.our-fleet-header {
+  margin-bottom: 3rem;
+}
+
+.our-fleet-header h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.fleet-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.fleet-card {
+  background-color: #2a2a2a;
+  border: 1px solid #444444;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.fleet-card:hover {
+  border-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.fleet-image {
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  padding: 3rem 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.fleet-image span {
+  color: #cccccc;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.fleet-card h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.fleet-card p {
+  color: #cccccc;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.calculate-rate-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.calculate-rate-link:hover {
+  color: #0088ff;
+}
+
+/* Service Areas & Top Destinations Section */
+.service-areas-section {
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.service-areas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-areas-header {
+  margin-bottom: 3rem;
+}
+
+.service-areas-header h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ohare-section {
+  background-color: #2a2a2a;
+  border: 1px solid #444444;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.ohare-section h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.ohare-section p {
+  color: #cccccc;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.destination-item {
+  background-color: #444444;
+  color: #ffffff;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.destination-item:hover {
+  background-color: #ffd700;
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+/* Additional responsive styles for new sections */
+@media (max-width: 768px) {
+  .our-services-section,
+  .top-destinations-section,
+  .customer-reviews-section,
+  .our-fleet-section,
+  .service-areas-section {
+    padding: 2rem 1rem;
+  }
+
+  .our-services-header h2,
+  .top-destinations-header h2,
+  .customer-reviews-header h2,
+  .our-fleet-header h2,
+  .service-areas-header h2 {
+    font-size: 2rem;
+  }
+
+  .services-cards-grid,
+  .destinations-cards-grid,
+  .fleet-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .reviews-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .service-card,
+  .destination-card,
+  .fleet-card,
+  .review-card,
+  .service-area-card {
+    padding: 1rem;
+  }
+
+  .service-image,
+  .destination-image,
+  .fleet-image {
+    padding: 2rem 1rem;
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .destinations-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .destination-item {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Service Cards Section */
+.service-cards-section {
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.service-cards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #2a2a2a;
+  border: 1px solid #444444;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  border-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.service-card h3 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: #cccccc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Service Cards Responsive */
+@media (max-width: 768px) {
+  .service-cards-section {
+    padding: 2rem 1rem;
+  }
+
+  .service-cards-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Image Styles */
+.fleet-image img,
+.service-image img,
+.destination-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fleet-image,
+.service-image,
+.destination-image {
+  padding: 0;
+  overflow: hidden;
+}

@@ -6,13 +6,6 @@
   position: relative;
 }
 
-.navbar-container {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  z-index: 1000;
-}
-
 .blog-header {
   text-align: left;
   margin-bottom: 3rem;
@@ -120,8 +113,4 @@
     font-size: 1.3rem;
   }
   
-  .navbar-container {
-    top: 1rem;
-    right: 1rem;
-  }
 }

@@ -7,18 +7,8 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header className="header">
-      <div className="header-container">
-        <div className="logo">
-           <div className="navbar-logo">
-          <Link to="/" className="logo-link">
-            <img src={logo} alt="Eminent Limo" className="logo-img" />
-          </Link>
-        </div>
-        
-        </div>
-        <div className="desktop-nav">
-          <Navbar showHamburger={true} />
-        </div>
+      <div className="navbar-fullwidth">
+        <Navbar showHamburger={true} />
       </div>
       <main className="main-content">
         <div className="hero-section">

@@ -5,7 +5,12 @@
   right: 0;
   z-index: 1000;
   background: transparent;
-  padding: 20px 80px;
+  padding: 0;
+}
+
+.navbar-fullwidth {
+  width: 100%;
+  position: relative;
 }
 
 .header-container {
@@ -22,21 +27,7 @@
   display: block;
 }
 
-.hamburger-menu {
-  display: none;
-  background: rgba(0, 0, 0, 0.8);
-  border: none;
-  border-radius: 8px;
-  padding: 12px;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 4px;
-  transition: all 0.3s ease;
-}
 
-.hamburger-menu:hover {
-  background: rgba(0, 0, 0, 0.9);
-}
 
 .hamburger-line {
   width: 20px;
@@ -179,12 +170,13 @@
 @media (max-width: 768px) {
   
   .header{
-    padding: 20px 20px;
+    padding: 0;
   }
   
-  .hamburger-menu {
-    display: flex;
+  .navbar-fullwidth {
+    padding: 1rem;
   }
+  
   
   .main-content {
     padding-left: 20px;

@@ -6,13 +6,6 @@
   position: relative;
 }
 
-.navbar-container {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  z-index: 1000;
-}
-
 .services-content {
   display: flex;
   align-items: center;
@@ -121,10 +114,6 @@
     max-width: 300px;
   }
   
-  .navbar-container {
-    top: 1rem;
-    right: 1rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -259,7 +248,7 @@
 }
 
 .calculate-rate-link {
-  color: #3b82f6;
+  color: #ffd700;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
@@ -267,7 +256,7 @@
 }
 
 .calculate-rate-link:hover {
-  color: #1d4ed8;
+  color: #ffd712;
 }
 
 /* Calculate Rate Banner */
@@ -565,7 +554,7 @@
 }
 
 .check-rates-link {
-  color: #3b82f6;
+  color: #ffd700;
   text-decoration: underline;
   font-weight: 600;
   font-size: 0.9rem;
@@ -573,7 +562,7 @@
 }
 
 .check-rates-link:hover {
-  color: #1d4ed8;
+  color: #ffd712;
 }
 
 /* Responsive Design for Fleet Section */
@@ -742,6 +731,96 @@
   
   .service-card p {
     font-size: 0.85rem;
+  }
+}
+
+/* Service Cards Grid Section */
+.service-cards-grid-section {
+  padding: 4rem 2rem;
+}
+
+.service-cards-grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.service-card-grid {
+  flex: 1;
+  background-color: #2d2d2d;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 120px;
+}
+
+.service-card-grid h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.4;
+}
+
+.service-card-grid .check-rates-link {
+  color: #ffd700;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  align-self: flex-start;
+}
+
+.service-card-grid .check-rates-link:hover {
+  color: #ffd720;
+}
+
+/* Responsive Design for Service Cards Grid */
+@media (max-width: 1024px) {
+  .service-cards-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-cards-grid-section {
+    padding: 2rem 1rem;
+  }
+  
+  .service-cards-grid-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .service-card-grid {
+    padding: 1.5rem;
+    min-height: 100px;
+  }
+  
+  .service-card-grid h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card-grid {
+    padding: 1.25rem;
+  }
+  
+  .service-card-grid h3 {
+    font-size: 1.1rem;
+  }
+  
+  .service-card-grid .check-rates-link {
+    font-size: 0.9rem;
   }
 }
 

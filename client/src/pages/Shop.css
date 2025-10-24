@@ -6,12 +6,6 @@
   position: relative;
 }
 
-.navbar-container {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  z-index: 1000;
-}
 
 .shop-content {
   max-width: 1200px;
@@ -168,6 +162,13 @@
   opacity: 0.8;
 }
 
+.package-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 .package-card h3 {
   font-size: 1.25rem;
   font-weight: bold;
@@ -226,9 +227,8 @@
 }
 
 .add-to-cart-btn:hover {
-  background-color: #1d4ed8;
+  background-color: #ffd712;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 /* Browse by Category Section */
@@ -353,11 +353,6 @@
   
   .catalog-description {
     font-size: 1rem;
-  }
-  
-  .navbar-container {
-    top: 1rem;
-    right: 1rem;
   }
 }
 

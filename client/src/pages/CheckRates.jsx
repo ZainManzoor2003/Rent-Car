@@ -22,6 +22,26 @@ const CheckRates = () => {
   });
 
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [slidesToShow, setSlidesToShow] = useState(4);
+
+  // Update slides to show based on screen size
+  React.useEffect(() => {
+    const updateSlidesToShow = () => {
+      if (window.innerWidth <= 480) {
+        setSlidesToShow(1);
+      } else if (window.innerWidth <= 768) {
+        setSlidesToShow(2);
+      } else if (window.innerWidth <= 1024) {
+        setSlidesToShow(3);
+      } else {
+        setSlidesToShow(4);
+      }
+    };
+
+    updateSlidesToShow();
+    window.addEventListener('resize', updateSlidesToShow);
+    return () => window.removeEventListener('resize', updateSlidesToShow);
+  }, []);
 
   const fleetData = [
     {
@@ -117,7 +137,6 @@ const CheckRates = () => {
     }
   ];
 
-  const slidesToShow = 3;
   const totalSlides = Math.ceil(fleetData.length / slidesToShow);
 
   const nextSlide = () => {
@@ -354,17 +373,18 @@ const CheckRates = () => {
            <div className="container">
              <div className="fleet-header">
                <h2 className="section-title">Our Fleet – 13 Vehicle Types</h2>
-               {/* <div className="fleet-navigation">
+               <div className="fleet-navigation">
                  <button className="nav-arrow left-arrow" onClick={prevSlide}>‹</button>
                  <button className="nav-arrow right-arrow" onClick={nextSlide}>›</button>
-               </div> */}
+               </div>
              </div>
              <div className="fleet-carousel-container">
                <div 
                  className="fleet-cards" 
                  style={{ 
-                   transform: `translateX(-${currentSlide * 100}%)`,
-                   transition: 'transform 0.5s ease-in-out'
+                   transform: `translateX(-${currentSlide * (100 / slidesToShow)}%)`,
+                   transition: 'transform 0.5s ease-in-out',
+                   width: `${(fleetData.length / slidesToShow) * 100}%`
                  }}
                >
                  {fleetData.map((vehicle) => (
@@ -438,6 +458,42 @@ const CheckRates = () => {
                 <p className="faq-answer">
                   Contact us or use the Instant Rate tool above for specifics—pricing varies by date, distance, and vehicle.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Our Fleet Section */}
+        <div className="our-fleet-section">
+          <div className="our-fleet-container">
+            <div className="our-fleet-header">
+              <h2>Our Fleet</h2>
+              <p>Choose from two-passenger sedans to 50-passenger coaches.</p>
+            </div>
+            <div className="fleet-cards-grid">
+              <div className="fleet-card">
+                <div className="fleet-image">
+                  <img src={car2} alt="Standard Shuttle Sprinter" />
+                </div>
+                <h3>Standard Shuttle Sprinter</h3>
+                <p>11 passengers • 11 bags</p>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="fleet-card">
+                <div className="fleet-image">
+                  <img src={car3} alt="Large Shuttle Sprinter" />
+                </div>
+                <h3>Large Shuttle Sprinter</h3>
+                <p>14 passengers • 14 bags</p>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
+              </div>
+              <div className="fleet-card">
+                <div className="fleet-image">
+                  <img src={car4} alt="Executive Sprinter" />
+                </div>
+                <h3>Executive Sprinter</h3>
+                <p>12 passengers • 12 bags</p>
+                <a href="#" className="calculate-rate-link">Calculate Rate</a>
               </div>
             </div>
           </div>

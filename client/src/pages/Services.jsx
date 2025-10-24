@@ -201,6 +201,31 @@ const Services = () => {
           </div>
         </div>
 
+        {/* Service Cards Section */}
+        <div className="service-cards-grid-section">
+          <div className="service-cards-grid-container">
+            <div className="service-card-grid">
+              <h3>Chicago O'Hare International Airport</h3>
+              <a href="#" className="check-rates-link">Check Rates</a>
+            </div>
+            
+            <div className="service-card-grid">
+              <h3>Chicago Midway International Airport</h3>
+              <a href="#" className="check-rates-link">Check Rates</a>
+            </div>
+            
+            <div className="service-card-grid">
+              <h3>Sprinter Van Rental — Illinois</h3>
+              <a href="#" className="check-rates-link">Check Rates</a>
+            </div>
+            
+            <div className="service-card-grid">
+              <h3>Group Transportation Services</h3>
+              <a href="#" className="check-rates-link">Check Rates</a>
+            </div>
+          </div>
+        </div>
+
        
         </div>
       <Footer />

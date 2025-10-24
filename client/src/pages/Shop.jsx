@@ -2,6 +2,9 @@ import React from 'react';
 import './Shop.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import car1 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_09 PM.png';
+import car2 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_11 PM.png';
+import car3 from '../assets/ChatGPT Image Oct 18_ 2025_ 12_18_12 PM.png';
 
 const Shop = () => {
   return (
@@ -41,7 +44,7 @@ const Shop = () => {
             <div className="packages-grid">
               <div className="package-card">
                 <div className="package-image">
-                  <span>Vehicle Image</span>
+                  <img src={car1} alt="Executive Sedan for Airport Transfer" className="package-img" />
                 </div>
                 <h3>O'Hare Airport Transfer</h3>
                 <p className="vehicle-type">Executive Sedan</p>
@@ -65,7 +68,7 @@ const Shop = () => {
 
               <div className="package-card">
                 <div className="package-image">
-                  <span>Vehicle Image</span>
+                  <img src={car2} alt="Luxury SUV for Corporate Charter" className="package-img" />
                 </div>
                 <h3>Corporate 4-Hour Charter</h3>
                 <p className="vehicle-type">Luxury SUV</p>
@@ -89,7 +92,7 @@ const Shop = () => {
 
               <div className="package-card">
                 <div className="package-image">
-                  <span>Vehicle Image</span>
+                  <img src={car3} alt="Luxury Sedan for Wedding Package" className="package-img" />
                 </div>
                 <h3>Wedding Package</h3>
                 <p className="vehicle-type">Luxury Sedan</p>

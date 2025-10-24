@@ -6,6 +6,8 @@ import logo from '../assets/Logo.png';
 const Navbar = ({ isMobile = false, showHamburger = false }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isLightMode, setIsLightMode] = useState(false);
+  const [isPagesDropdownOpen, setIsPagesDropdownOpen] = useState(false);
   const location = useLocation();
 
   const toggleDropdown = () => {
@@ -18,6 +20,18 @@ const Navbar = ({ isMobile = false, showHamburger = false }) => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const toggleLightMode = () => {
+    setIsLightMode(!isLightMode);
+  };
+
+  const togglePagesDropdown = () => {
+    setIsPagesDropdownOpen(!isPagesDropdownOpen);
+  };
+
+  const closePagesDropdown = () => {
+    setIsPagesDropdownOpen(false);
   };
 
   return (
@@ -33,40 +47,69 @@ const Navbar = ({ isMobile = false, showHamburger = false }) => {
 
       {/* Desktop/Mobile Navbar */}
       <nav className={`navbar ${isMobile ? 'mobile-navbar' : ''}`}>
-        {/* Logo */}
-        {/* <div className="navbar-logo">
+        {/* Logo Section */}
+        <div className="navbar-logo">
           <Link to="/" className="logo-link">
-            <img src={logo} alt="Eminent Limo" className="logo-img" />
+            <div className="logo-container">
+              <div className="logo-gradient"></div>
+              <span className="logo-text">Eminent Limo</span>
+            </div>
           </Link>
-        </div> */}
+        </div>
         
+        {/* Navigation Links */}
         <ul className={`nav-list ${isMobile ? 'mobile-nav-list' : ''}`}>
           <li className="nav-item">
-            <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link>
+            <Link to="/book" className={`nav-link ${location.pathname === '/book' ? 'active' : ''}`}>Book Online</Link>
           </li>
-          <li className="nav-item dropdown" onMouseEnter={!isMobile ? toggleDropdown : undefined} onMouseLeave={!isMobile ? closeDropdown : undefined}>
-            <a href="#pages" className="nav-link" onClick={isMobile ? toggleDropdown : undefined}>
-              Pages
-              <span className="dropdown-arrow" style={{right:'0px'}}>{isDropdownOpen ? '▲' : '▼'}</span>
-            </a>
-            {isDropdownOpen && (
-              <ul className={`dropdown-menu ${isMobile ? 'mobile-dropdown-menu' : ''}`}>
-                <li><Link to="/" className={`dropdown-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link></li>
-                <li><Link to="/destinations" className={`dropdown-link ${location.pathname === '/destinations' ? 'active' : ''}`}>Destinations</Link></li>
-                <li><Link to="/blog" className={`dropdown-link ${location.pathname === '/blog' ? 'active' : ''}`}>Blog</Link></li>
-                <li><Link to="/check-rates" className={`dropdown-link ${location.pathname === '/check-rates' ? 'active' : ''}`}>Check Rates</Link></li>
-                <li><Link to="/book" className={`dropdown-link ${location.pathname === '/book' ? 'active' : ''}`}>Book</Link></li>
-                <li><Link to="/transportation" className={`dropdown-link ${location.pathname === '/transportation' ? 'active' : ''}`}>Transportation</Link></li>
-                <li><Link to="/vehicle-types" className={`dropdown-link ${location.pathname === '/vehicle-types' ? 'active' : ''}`}>Vehicle Types</Link></li>
-              </ul>
-            )}
+          <li className="nav-item">
+            <Link to="/services" className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`}>Services</Link>
           </li>
-          <li><Link to="/services" className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`}>Services</Link></li>
-          <li><Link to="/shop" className={`nav-link ${location.pathname === '/shop' ? 'active' : ''}`}>Shop</Link></li>
+          <li className="nav-item">
+            <Link to="/vehicle-types" className={`nav-link ${location.pathname === '/vehicle-types' ? 'active' : ''}`}>Vehicle Types</Link>
+          </li>
           <li className="nav-item">
             <Link to="/contact" className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}>Contact</Link>
           </li>
+          <li className="nav-item dropdown-container">
+            <button 
+              className={`nav-link dropdown-toggle ${isPagesDropdownOpen ? 'active' : ''}`}
+              onClick={togglePagesDropdown}
+              onMouseEnter={() => setIsPagesDropdownOpen(true)}
+            >
+              Pages
+            </button>
+            {isPagesDropdownOpen && (
+              <div 
+                className="dropdown-menu"
+                onMouseLeave={closePagesDropdown}
+              >
+                <Link to="/check-rates" className="dropdown-item" onClick={closePagesDropdown}>
+                  Check Rates
+                </Link>
+                <Link to="/destinations" className="dropdown-item" onClick={closePagesDropdown}>
+                  Destinations
+                </Link>
+                <Link to="/transportation" className="dropdown-item" onClick={closePagesDropdown}>
+                  Transportation
+                </Link>
+                <Link to="/shop" className="dropdown-item" onClick={closePagesDropdown}>
+                  Shop
+                </Link>
+              </div>
+            )}
+          </li>
         </ul>
+
+        {/* Right Section - Buttons */}
+        <div className="navbar-right">
+          <button className="light-mode-btn" onClick={toggleLightMode}>
+            Light Mode
+          </button>
+          <Link to="/check-rates" className="check-rates-btn" style={{ borderRadius: '25px' }}>
+            Check Rates
+          </Link>
+        </div>
       </nav>
 
       {/* Mobile Menu Overlay */}

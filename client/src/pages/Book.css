@@ -77,7 +77,6 @@
 }
 
 .widget-preview {
-  background-color: #1a1a1a;
   border-radius: 12px;
   padding: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -87,6 +86,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #1A1A1A;
 }
 
 .loading-placeholder {
@@ -252,18 +252,20 @@
 }
 
 .options-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
 .option-card {
-  background-color: #1a1a1a;
+  flex: 1 1 calc(25% - 1.125rem);
+  min-width: 250px;
   border-radius: 12px;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  background-color: #1A1A1A;
 }
 
 .option-card:hover {
@@ -312,13 +314,14 @@
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
 .service-card {
-  background-color: #1a1a1a;
+  flex: 1 1 calc(20% - 1.2rem);
+  min-width: 200px;
   border-radius: 12px;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -381,7 +384,7 @@
 }
 
 .book-link:hover {
-  color: #1d4ed8;
+  color: #ffd712;
 }
 
 /* Booking Steps Section */
@@ -409,18 +412,20 @@
 }
 
 .steps-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
 .step-card {
-  background-color: #1a1a1a;
+  flex: 1 1 calc(25% - 1.125rem);
+  min-width: 250px;
   border-radius: 12px;
   padding: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
+  background-color: #1A1A1A;
 }
 
 .step-card:hover {
@@ -447,16 +452,16 @@
 
 /* Responsive Design for New Sections */
 @media (max-width: 1024px) {
-  .options-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .option-card {
+    flex: 1 1 calc(33.333% - 1rem);
   }
   
-  .services-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .service-card {
+    flex: 1 1 calc(33.333% - 1rem);
   }
   
-  .steps-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .step-card {
+    flex: 1 1 calc(50% - 0.75rem);
   }
 }
 
@@ -473,19 +478,16 @@
     font-size: 2.5rem;
   }
   
-  .options-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+  .option-card {
+    flex: 1 1 calc(50% - 0.5rem);
   }
   
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+  .service-card {
+    flex: 1 1 calc(50% - 0.5rem);
   }
   
-  .steps-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .step-card {
+    flex: 1 1 100%;
   }
   
   .option-card,
@@ -506,10 +508,9 @@
     font-size: 2rem;
   }
   
-  .options-grid,
-  .services-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .option-card,
+  .service-card {
+    flex: 1 1 100%;
   }
   
   .option-card,
@@ -560,13 +561,14 @@
 }
 
 .fleet-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
 .fleet-card {
-  background-color: #1a1a1a;
+  flex: 1 1 calc(25% - 1.125rem);
+  min-width: 250px;
   border-radius: 12px;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -629,13 +631,13 @@
 }
 
 .calculate-rate-link:hover {
-  color: #1d4ed8;
+  color: #ffd712;
 }
 
 /* Our Fleet Responsive Design */
 @media (max-width: 1024px) {
-  .fleet-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .fleet-card {
+    flex: 1 1 calc(50% - 0.75rem);
   }
 }
 
@@ -648,12 +650,8 @@
     font-size: 2.5rem;
   }
   
-  .fleet-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-  
   .fleet-card {
+    flex: 1 1 calc(50% - 0.5rem);
     padding: 1.25rem;
   }
   
@@ -667,12 +665,8 @@
     font-size: 2rem;
   }
   
-  .fleet-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
   .fleet-card {
+    flex: 1 1 100%;
     padding: 1rem;
   }
   
@@ -686,6 +680,227 @@
   
   .fleet-card p {
     font-size: 0.85rem;
+  }
+}
+
+/* Transparent Billing & Cancellation Section */
+.billing-cancellation-section {
+  padding: 4rem 2rem;
+}
+
+.billing-cancellation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.billing-cancellation-section .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 3rem 0;
+  text-align: left;
+}
+
+.policies-grid {
+  display: flex;
+  gap: 2rem;
+}
+
+.policy-card {
+  flex: 1;
+  background-color: #2d2d2d;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.policy-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 1.5rem 0;
+}
+
+.policy-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.policy-list li {
+  color: #cccccc;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.policy-list li::before {
+  content: "•";
+  color: #ffd700;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* What Our Customers Say Section */
+.testimonials-section {
+  background-color: #000000;
+  padding: 4rem 2rem;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-section .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 3rem 0;
+  text-align: left;
+}
+
+.testimonials-grid {
+  display: flex;
+  gap: 2rem;
+}
+
+.testimonial-card {
+  flex: 1;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+  background-color: #1A1A1A;
+}
+
+.stars {
+  color: #ffd700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  font-style: italic;
+}
+
+.customer-name {
+  color: #cccccc;
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Frequently Asked Questions Section */
+.faq-section {
+  padding: 4rem 2rem;
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-section .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 3rem 0;
+  text-align: left;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.faq-card {
+  background-color: #2d2d2d;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  line-height: 1.4;
+}
+
+.faq-answer {
+  color: #cccccc;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 768px) {
+  .billing-cancellation-section,
+  .testimonials-section,
+  .faq-section {
+    padding: 2rem 1rem;
+  }
+  
+  .billing-cancellation-section .section-title,
+  .testimonials-section .section-title,
+  .faq-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .policies-grid,
+  .testimonials-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .policy-card,
+  .testimonial-card,
+  .faq-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .billing-cancellation-section .section-title,
+  .testimonials-section .section-title,
+  .faq-section .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .policy-card,
+  .testimonial-card,
+  .faq-card {
+    padding: 1.25rem;
+  }
+  
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+  
+  .faq-question {
+    font-size: 1.1rem;
+  }
+  
+  .faq-answer {
+    font-size: 0.95rem;
   }
 }
 

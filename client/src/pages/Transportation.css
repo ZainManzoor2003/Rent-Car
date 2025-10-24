@@ -1,6 +1,5 @@
 /* McCormick Place Information Section */
 .mccormick-info-section {
-  background-color: #1a1a1a;
   padding: 60px 0;
   color: white;
 }
@@ -232,7 +231,6 @@
 
 /* FAQ Section */
 .faq-section {
-  background-color: #1a1a1a;
   padding: 60px 0;
   color: white;
 }

@@ -246,6 +246,103 @@ const Book = () => {
           </div>
         </div>
 
+        {/* Transparent Billing & Cancellation Section */}
+        <div className="billing-cancellation-section">
+          <div className="billing-cancellation-container">
+            <h2 className="section-title">Transparent Billing & Cancellation</h2>
+            
+            <div className="policies-grid">
+              <div className="policy-card">
+                <h3 className="policy-title">Credit Card Policy</h3>
+                <ul className="policy-list">
+                  <li>Card required to secure all reservations.</li>
+                  <li>Sedans & SUVs: charged 1 hour before pickup.</li>
+                  <li>Limos, Sprinters & Buses: charged 48 hours before pickup.</li>
+                </ul>
+              </div>
+              
+              <div className="policy-card">
+                <h3 className="policy-title">Cancellation Policy</h3>
+                <ul className="policy-list">
+                  <li>Sedans & SUVs: free cancellation up to 1 hour prior.</li>
+                  <li>Limos, Sprinters & Buses: free cancellation up to 72 hours prior.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* What Our Customers Say Section */}
+        <div className="testimonials-section">
+          <div className="testimonials-container">
+            <h2 className="section-title">What Our Customers Say</h2>
+            
+            <div className="testimonials-grid">
+              <div className="testimonial-card">
+                <div className="stars">★★★★★</div>
+                <p className="testimonial-text">"GREAT COMPANY! Mr. T was awesome—friendly, professional, and great customer service. Highly recommend!"</p>
+                <p className="customer-name">— Tory Lane</p>
+              </div>
+              
+              <div className="testimonial-card">
+                <div className="stars">★★★★★</div>
+                <p className="testimonial-text">"On time for O'Hare pickup, spotless SUV, seamless experience from booking to drop-off."</p>
+                <p className="customer-name">— A. Patel</p>
+              </div>
+              
+              <div className="testimonial-card">
+                <div className="stars">★★★★★</div>
+                <p className="testimonial-text">"Used for a wedding shuttle—fantastic coordination and courteous chauffeurs."</p>
+                <p className="customer-name">— M. Rivera</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Frequently Asked Questions Section */}
+        <div className="faq-section">
+          <div className="faq-container">
+            <h2 className="section-title">Frequently Asked Questions</h2>
+            
+            <div className="faq-grid">
+              <div className="faq-card">
+                <h3 className="faq-question">How much does it cost to rent a limo in Chicago?</h3>
+                <p className="faq-answer">Rates vary by vehicle, date, distance, and duration. Use the Check Rates page for instant pricing or call 855-286-6691.</p>
+              </div>
+              
+              <div className="faq-card">
+                <h3 className="faq-question">What if my flight is delayed?</h3>
+                <p className="faq-answer">We track flights in real time and adjust. Waiting time applies after a certain period.</p>
+              </div>
+              
+              <div className="faq-card">
+                <h3 className="faq-question">Do you provide safety car seats?</h3>
+                <p className="faq-answer">Yes—upon request. Add during booking or contact us in advance.</p>
+              </div>
+              
+              <div className="faq-card">
+                <h3 className="faq-question">Are you open on holidays?</h3>
+                <p className="faq-answer">Yes. We operate 24/7/365—including holidays.</p>
+              </div>
+              
+              <div className="faq-card">
+                <h3 className="faq-question">Will the driver help with luggage?</h3>
+                <p className="faq-answer">Absolutely. Curbside assistance is standard.</p>
+              </div>
+              
+              <div className="faq-card">
+                <h3 className="faq-question">Which cities do you serve?</h3>
+                <p className="faq-answer">All Chicagoland (O'Hare, Midway, suburbs) and regional MI, OH, IA, MO.</p>
+              </div>
+              
+              <div className="faq-card">
+                <h3 className="faq-question">When is my card charged and what's the cancellation policy?</h3>
+                <p className="faq-answer">Sedans & SUVs: charged 1 hour before pickup; free cancellation up to 1 hour prior. Limos, Sprinters & Buses: charged 48 hours before pickup; free cancellation up to 72 hours prior.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         </div>
         </div>
       <Footer />

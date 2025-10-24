@@ -245,6 +245,222 @@ const VehiceTypes = () => {
             </div>
           </div>
         </div>
+
+        {/* Sedans Section */}
+        <div className="vehicle-types-section">
+          <div className="vehicle-types-container">
+            <h2 className="section-title">Sedans</h2>
+            <p className="section-subtitle">Calculate an Instant Rate</p>
+            
+            <div className="vehicle-cards">
+              {/* Executive Sedan Card */}
+              <div className="vehicle-card">
+                <div className="vehicle-image">
+                  <img src={car1} alt="Executive Sedan" className="vehicle-img" />
+                </div>
+                <div className="vehicle-content">
+                  <div className="vehicle-header">
+                    <h3 className="vehicle-title">Executive Sedan</h3>
+                    <span className="vehicle-tag executive">Executive</span>
+                  </div>
+                  <p className="vehicle-capacity">3 Seats • 3 Luggage</p>
+                  <ul className="vehicle-features">
+                    <li>Up to 3 passengers</li>
+                    <li>Premium leather interior with wood trim</li>
+                    <li>Quiet cabin with excellent legroom</li>
+                    <li>USB-A/C charging + 12V power outlet</li>
+                    <li>Complimentary water & daily periodicals</li>
+                    <li>Rear cargo fits 2 large suitcases or 3 carry-ons</li>
+                    <li>Discreet black exterior — ideal for executives</li>
+                  </ul>
+                  <div className="vehicle-actions">
+                    <button className="book-now-btn">Book Now</button>
+                    <button className="check-rates-btn">Check Rates</button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Luxury Sedan Card */}
+              <div className="vehicle-card">
+                <div className="vehicle-image">
+                  <img src={car2} alt="Luxury Sedan" className="vehicle-img" />
+                </div>
+                <div className="vehicle-content">
+                  <div className="vehicle-header">
+                    <h3 className="vehicle-title">Luxury Sedan</h3>
+                    <span className="vehicle-tag luxury">Luxury</span>
+                  </div>
+                  <p className="vehicle-capacity">3 Seats • 3 Luggage</p>
+                  <ul className="vehicle-features">
+                    <li>Up to 3 passengers</li>
+                    <li>Power panoramic, all-glass roof</li>
+                    <li>Heated & ventilated seats, tri-zone climate</li>
+                    <li>Rear console controls for climate & audio</li>
+                    <li>Wireless charging & dual USB-C</li>
+                    <li>Hands-free trunk access, soft-close doors</li>
+                    <li>Cargo for 2 large checked or 4 carry-on bags</li>
+                  </ul>
+                  <div className="vehicle-actions">
+                    <button className="book-now-btn">Book Now</button>
+                    <button className="check-rates-btn">Check Rates</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Minibus Section */}
+        <div className="vehicle-types-section">
+          <div className="vehicle-types-container">
+            <h2 className="section-title">Minibus</h2>
+            <p className="section-subtitle">Calculate an Instant Rate</p>
+            
+            <div className="vehicle-cards">
+              {/* Minibus Card */}
+              <div className="vehicle-card">
+                <div className="vehicle-image">
+                  <img src={car5} alt="Minibus" className="vehicle-img" />
+                </div>
+                <div className="vehicle-content">
+                  <div className="vehicle-header">
+                    <h3 className="vehicle-title">Minibus</h3>
+                    <span className="vehicle-tag large">Large</span>
+                  </div>
+                  <p className="vehicle-capacity">23 Seats • 23 Luggage</p>
+                  <ul className="vehicle-features">
+                    <li>Up to 23 passengers</li>
+                    <li>Coach-style high-back seats with armrests</li>
+                    <li>Overhead parcel racks + rear luggage hold</li>
+                    <li>PA mic system for tours/announcements</li>
+                    <li>USB charging across cabin (select models)</li>
+                    <li>Great for corporate shuttles & group travel</li>
+                    <li>Easy curbside boarding with wide door</li>
+                  </ul>
+                  <div className="vehicle-actions">
+                    <button className="book-now-btn">Book Now</button>
+                    <button className="check-rates-btn">Check Rates</button>
+                  </div>
+                </div>
+              </div>
+              <div className="vehicle-card">
+                <div className="vehicle-image">
+                  <img src={car5} alt="Minibus" className="vehicle-img" />
+                </div>
+                <div className="vehicle-content">
+                  <div className="vehicle-header">
+                    <h3 className="vehicle-title">Minibus</h3>
+                    <span className="vehicle-tag large">Large</span>
+                  </div>
+                  <p className="vehicle-capacity">23 Seats • 23 Luggage</p>
+                  <ul className="vehicle-features">
+                    <li>Up to 23 passengers</li>
+                    <li>Coach-style high-back seats with armrests</li>
+                    <li>Overhead parcel racks + rear luggage hold</li>
+                    <li>PA mic system for tours/announcements</li>
+                    <li>USB charging across cabin (select models)</li>
+                    <li>Great for corporate shuttles & group travel</li>
+                    <li>Easy curbside boarding with wide door</li>
+                  </ul>
+                  <div className="vehicle-actions">
+                    <button className="book-now-btn">Book Now</button>
+                    <button className="check-rates-btn">Check Rates</button>
+                  </div>
+                </div>
+              </div>
+              <div className="vehicle-card">
+                <div className="vehicle-image">
+                  <img src={car5} alt="Minibus" className="vehicle-img" />
+                </div>
+                <div className="vehicle-content">
+                  <div className="vehicle-header">
+                    <h3 className="vehicle-title">Minibus</h3>
+                    <span className="vehicle-tag large">Large</span>
+                  </div>
+                  <p className="vehicle-capacity">23 Seats • 23 Luggage</p>
+                  <ul className="vehicle-features">
+                    <li>Up to 23 passengers</li>
+                    <li>Coach-style high-back seats with armrests</li>
+                    <li>Overhead parcel racks + rear luggage hold</li>
+                    <li>PA mic system for tours/announcements</li>
+                    <li>USB charging across cabin (select models)</li>
+                    <li>Great for corporate shuttles & group travel</li>
+                    <li>Easy curbside boarding with wide door</li>
+                  </ul>
+                  <div className="vehicle-actions">
+                    <button className="book-now-btn">Book Now</button>
+                    <button className="check-rates-btn">Check Rates</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Stretch Limos Section */}
+        <div className="vehicle-types-section">
+          <div className="vehicle-types-container">
+            <h2 className="section-title">Stretch Limos</h2>
+            <p className="section-subtitle">Calculate an Instant Rate</p>
+            
+            <div className="vehicle-cards">
+              {/* 9 Passengers Stretch Limo Card */}
+              <div className="vehicle-card">
+                <div className="vehicle-image">
+                  <img src={car3} alt="9 Passengers Stretch Limo" className="vehicle-img" />
+                </div>
+                <div className="vehicle-content">
+                  <div className="vehicle-header">
+                    <h3 className="vehicle-title">9 Passengers Stretch Limo</h3>
+                    <span className="vehicle-tag large">Large</span>
+                  </div>
+                  <p className="vehicle-capacity">9 Seats • 3 Luggage</p>
+                  <ul className="vehicle-features">
+                    <li>Up to 9 passengers</li>
+                    <li>Leather J-seating with illuminated accents</li>
+                    <li>Privacy divider & blackout tint</li>
+                    <li>Glassware & cooler (ice/water included)</li>
+                    <li>Bluetooth sound with party lighting</li>
+                    <li>Ideal for proms, birthdays, anniversaries</li>
+                    <li>Small trunk for 2-3 soft bags</li>
+                  </ul>
+                  <div className="vehicle-actions">
+                    <button className="book-now-btn">Book Now</button>
+                    <button className="check-rates-btn">Check Rates</button>
+                  </div>
+                </div>
+              </div>
+
+              {/* SUV Stretch Limo Card */}
+              <div className="vehicle-card">
+                <div className="vehicle-image">
+                  <img src={car4} alt="SUV Stretch Limo" className="vehicle-img" />
+                </div>
+                <div className="vehicle-content">
+                  <div className="vehicle-header">
+                    <h3 className="vehicle-title">SUV Stretch Limo</h3>
+                    <span className="vehicle-tag executive">Executive</span>
+                  </div>
+                  <p className="vehicle-capacity">20 Seats • 3 Luggage</p>
+                  <ul className="vehicle-features">
+                    <li>Up to 20 passengers</li>
+                    <li>Elevated ride height & wide entry doors</li>
+                    <li>Multiple bar stations with glassware</li>
+                    <li>Club lighting & premium surround audio</li>
+                    <li>Privacy divider + intercom to chauffeur</li>
+                    <li>Perfect for weddings & red-carpet events</li>
+                    <li>Small cargo for event bags & coats</li>
+                  </ul>
+                  <div className="vehicle-actions">
+                    <button className="book-now-btn">Book Now</button>
+                    <button className="check-rates-btn">Check Rates</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="ready-to-ride-banner">
           <div className="banner-content">
             <div className="banner-text">
